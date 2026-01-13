@@ -45,9 +45,9 @@ function sleep(ms: number): Promise<void> {
  * Fetch all active schools from Notion database with retry logic
  */
 export async function fetchSchoolsFromNotion(): Promise<NauticalSchool[]> {
-  // Check if Notion client is available
-  if (!notion) {
-    console.warn('⚠️  Notion client not available (missing credentials)');
+  // Check if Notion client is available and properly initialized
+  if (!notion || typeof notion.databases?.query !== 'function') {
+    console.warn('⚠️  Notion client not available or improperly initialized');
     throw new Error('Notion client not initialized');
   }
 
@@ -67,7 +67,7 @@ export async function fetchSchoolsFromNotion(): Promise<NauticalSchool[]> {
     // Retry logic with exponential backoff
     while (!success && retries < maxRetries) {
       try {
-        response = await (notion.databases as any).query({
+        response = await notion.databases.query({
           database_id: ESCUELAS_DB_ID,
           start_cursor: startCursor,
           // Remove filter to get all schools initially
