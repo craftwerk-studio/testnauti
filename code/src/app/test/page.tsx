@@ -8,22 +8,25 @@ import { pastExams } from '@/data/pastExams';
 
 type SortOption = 'date' | 'community';
 
+// Feature flag: Set to true to enable the test page
+const ENABLE_TEST_PAGE = false;
+
 export default function TestPage() {
   const router = useRouter();
+  const [sortBy, setSortBy] = useState<SortOption>('date');
 
-  // Redirect to home page - hidden for launch
+  // Redirect to home page when feature is disabled
   useEffect(() => {
-    router.push('/');
+    if (!ENABLE_TEST_PAGE) {
+      router.push('/');
+    }
   }, [router]);
 
-  // Hidden for launch - redirecting to home
-  return null;
+  // If disabled, return null while redirect happens
+  if (!ENABLE_TEST_PAGE) {
+    return null;
+  }
 
-  // Original content - hidden for launch, will be re-enabled later
-  /* eslint-disable */
-  /* 
-  const [sortBy, setSortBy] = useState<SortOption>('date');
-  
   const sortedExams = [...pastExams].sort((a, b) => {
     if (sortBy === 'date') {
       return b.dateSort.localeCompare(a.dateSort);
@@ -204,7 +207,5 @@ export default function TestPage() {
       </main>
     </div>
   );
-  */
-  /* eslint-enable */
 }
 
