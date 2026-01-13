@@ -1,0 +1,24 @@
+{
+  "name": "enrich-schools-script",
+  "version": "1.0.0",
+  "description": "AI-powered script to enrich school data in Notion by scraping websites",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bash run.sh",
+    "execute": "bash run.sh --execute",
+    "test": "bash run.sh --limit 5",
+    "test:execute": "bash run.sh --execute --limit 5"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@notionhq/client": "^2.2.15",
+    "cheerio": "^1.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.3"
+  }
+}

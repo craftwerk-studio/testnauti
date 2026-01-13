@@ -1,0 +1,56 @@
+{
+  "id": "2023-math-paper1",
+  "title": "Mathematics Paper 1 – 2023",
+  "subject": "Mathematics",
+  "year": 2023,
+  "durationMinutes": 120,
+  "totalQuestions": 40,
+  "description": "Official past paper from the 2023 national exam covering algebra, geometry, and calculus.",
+  "questions": [
+    {
+      "number": 1,
+      "text": "What is the value of 2 + 2 × 3?",
+      "options": {
+        "a": "8",
+        "b": "12",
+        "c": "6",
+        "d": "10"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 2,
+      "text": "Simplify the expression: 3x + 2x - x",
+      "options": {
+        "a": "6x",
+        "b": "4x",
+        "c": "5x",
+        "d": "3x"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 3,
+      "text": "What is the area of a circle with radius 5 cm? (Use π ≈ 3.14)",
+      "options": {
+        "a": "31.4 cm²",
+        "b": "78.5 cm²",
+        "c": "15.7 cm²",
+        "d": "157 cm²"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 4,
+      "text": "If f(x) = 2x + 3, what is f(4)?",
+      "options": {
+        "a": "11",
+        "b": "9",
+        "c": "10",
+        "d": "8"
+      },
+      "correctAnswer": "a"
+    }
+  ]
+}
+

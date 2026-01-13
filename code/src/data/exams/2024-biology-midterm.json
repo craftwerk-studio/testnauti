@@ -1,0 +1,45 @@
+{
+  "id": "2024-biology-midterm",
+  "title": "Biology Midterm Exam – 2024",
+  "subject": "Biology",
+  "year": 2024,
+  "durationMinutes": 90,
+  "totalQuestions": 30,
+  "description": "Comprehensive midterm covering cell biology, genetics, and ecology from the 2024 academic year.",
+  "questions": [
+    {
+      "number": 1,
+      "text": "What is the powerhouse of the cell?",
+      "options": {
+        "a": "Nucleus",
+        "b": "Mitochondria",
+        "c": "Ribosome",
+        "d": "Golgi apparatus"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 2,
+      "text": "Which process do plants use to convert sunlight into energy?",
+      "options": {
+        "a": "Respiration",
+        "b": "Fermentation",
+        "c": "Photosynthesis",
+        "d": "Transpiration"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 3,
+      "text": "What is the basic unit of heredity?",
+      "options": {
+        "a": "Chromosome",
+        "b": "DNA",
+        "c": "Gene",
+        "d": "Protein"
+      },
+      "correctAnswer": "c"
+    }
+  ]
+}
+

@@ -1,0 +1,56 @@
+{
+  "id": "2022-physics-final",
+  "title": "Physics Final Exam – 2022",
+  "subject": "Physics",
+  "year": 2022,
+  "durationMinutes": 150,
+  "totalQuestions": 50,
+  "description": "Comprehensive final examination covering mechanics, thermodynamics, and electromagnetism from 2022.",
+  "questions": [
+    {
+      "number": 1,
+      "text": "What is the SI unit of force?",
+      "options": {
+        "a": "Joule",
+        "b": "Watt",
+        "c": "Newton",
+        "d": "Pascal"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 2,
+      "text": "According to Newton's second law, F = ma. If mass doubles and acceleration stays constant, what happens to force?",
+      "options": {
+        "a": "It halves",
+        "b": "It doubles",
+        "c": "It stays the same",
+        "d": "It quadruples"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 3,
+      "text": "What is the speed of light in vacuum?",
+      "options": {
+        "a": "3 × 10⁸ m/s",
+        "b": "3 × 10⁶ m/s",
+        "c": "3 × 10⁹ m/s",
+        "d": "3 × 10⁷ m/s"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 4,
+      "text": "Which law states that energy cannot be created or destroyed?",
+      "options": {
+        "a": "Newton's First Law",
+        "b": "Law of Universal Gravitation",
+        "c": "First Law of Thermodynamics",
+        "d": "Ohm's Law"
+      },
+      "correctAnswer": "c"
+    }
+  ]
+}
+

@@ -1,0 +1,163 @@
+{
+  "fuentes_oficiales_nacionales": [
+    {
+      "organismo": "Dirección General de la Marina Mercante (DGMM)",
+      "url": "https://www.transportes.gob.es/marina-mercante",
+      "tipo": "Organismo nacional",
+      "funciones": [
+        "Convocatorias de exámenes náuticos",
+        "Homologación de centros de formación",
+        "Expedición de títulos náuticos (ámbito nacional)"
+      ],
+      "acceso_datos": "Restringido - No publica listado público de escuelas de recreo",
+      "sede_electronica": "https://sede.transportes.gob.es"
+    },
+    {
+      "organismo": "Ministerio de Transportes y Movilidad Sostenible",
+      "url_titulaciones": "https://www.transportes.gob.es/marina-mercante/titulaciones/titulaciones-de-recreo",
+      "url_centros_profesionales": "https://www.transportes.gob.es/marina-mercante/titulaciones/titulos-profesionales-formacion-maritima-documentos-y-guardia-de-la-gente-de-mar/centros_aprobados_dgmm",
+      "nota": "URL de centros corresponde a formación profesional marítima, NO recreo"
+    }
+  ],
+  "fuentes_oficiales_autonomicas": [
+    {
+      "comunidad": "Andalucía",
+      "organismo": "Instituto Andaluz del Deporte - Junta de Andalucía",
+      "url": "https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/deporte/formacion-investigacion-innovacion/titulaciones-nauticas.html",
+      "listado_escuelas": "Disponible por provincias",
+      "provincias_urls": {
+        "sevilla": "https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/deporte/formacion-investigacion-innovacion/titulaciones-nauticas/paginas/escuelas-sevilla.html",
+        "general": "https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/deporte/formacion-investigacion-innovacion/titulaciones-nauticas/paginas/escuelas-andalucia.html"
+      },
+      "acceso_datos": "Público - Requiere navegación manual por provincia"
+    },
+    {
+      "comunidad": "Cataluña",
+      "organismo": "Generalitat de Catalunya",
+      "nota": "Competencias transferidas. Escuelas requieren expediente de autorización oficial",
+      "acceso_datos": "No se encontró registro público online centralizado"
+    },
+    {
+      "comunidad": "Comunidad Valenciana",
+      "organismo": "Dirección General de Puertos, Aeropuertos y Costas",
+      "url_registro": "https://www.gva.es/es/inicio/procedimientos?id_proc=3199",
+      "url_alta_instructores": "https://www.gva.es/en/inicio/procedimientos?id_proc=15988",
+      "procedimiento": "Solicitud de registro de escuela de enseñanzas náutico-deportivas",
+      "acceso_datos": "Sistema de registro - No se confirma listado público"
+    },
+    {
+      "comunidad": "Canarias",
+      "organismo": "Gobierno de Canarias",
+      "url": "https://sede.gobiernodecanarias.org/sede/procedimientos_servicios/tramites/1053",
+      "procedimiento": "Autorización para las enseñanzas de prácticas deportivas náuticas",
+      "acceso_datos": "Sistema de solicitud - No se confirma listado público"
+    },
+    {
+      "comunidad": "Islas Baleares",
+      "nota": "Competencias transferidas. Se identificaron múltiples escuelas en Palma de Mallorca",
+      "acceso_datos": "No se encontró registro público online"
+    },
+    {
+      "comunidad": "País Vasco",
+      "nota": "Competencias transferidas. Escuelas identificadas en Getxo (Vizcaya)",
+      "acceso_datos": "No se encontró registro público online"
+    }
+  ],
+  "normativa_boe": [
+    {
+      "titulo": "Real Decreto 875/2014",
+      "descripcion": "Regulación de las titulaciones náuticas para el gobierno de las embarcaciones de recreo",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2014-10344",
+      "fecha": "10 de octubre de 2014",
+      "relevancia": "Normativa base del sector"
+    },
+    {
+      "titulo": "Orden FOM/3200/2007",
+      "descripcion": "Condiciones para el gobierno de embarcaciones de recreo",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-19071",
+      "fecha": "26 de octubre de 2007"
+    },
+    {
+      "titulo": "Resolución de 4 de enero de 2024",
+      "descripcion": "Convocatoria de exámenes teóricos ordinarios 2024",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1278",
+      "tipo": "Ejemplo de convocatoria anual"
+    }
+  ],
+  "plataformas_privadas": [
+    {
+      "nombre": "Central de Prácticas Náuticas",
+      "url": "https://www.centraldepracticasnauticas.com/registro-escuelas/",
+      "tipo": "Marketplace de prácticas náuticas",
+      "modelo": "Registro voluntario de escuelas homologadas",
+      "titulaciones": ["PER", "PNB", "LN", "PY", "CY"],
+      "utilidad": "Parcial - No todas las escuelas están registradas",
+      "contacto": {
+        "madrid": {
+          "direccion": "C/ Colombia 4, Portal independiente 1ª - 28016 Madrid",
+          "telefono": "913 440 729 / 606 314 096 ext. 3"
+        },
+        "valencia": {
+          "direccion": "C/ Cronista Carreres, 11-1ºD - 46003 Valencia",
+          "telefono": "963 201 235 / 601 249 825"
+        }
+      }
+    },
+    {
+      "nombre": "InfoIsInfo",
+      "url": "https://www.infoisinfo.es/busqueda/escuela_nautica",
+      "tipo": "Directorio comercial general",
+      "cobertura": "Nacional",
+      "verificacion": "No verificado oficialmente"
+    },
+    {
+      "nombre": "Emagister",
+      "url": "https://www.emagister.com/centros/escuelas-nauticas-centrostipo-23.htm",
+      "tipo": "Plataforma de cursos y formación",
+      "verificacion": "No verificado oficialmente"
+    },
+    {
+      "nombre": "Sailwiz",
+      "url": "https://www.sailwiz.com/en/offer/escuelas-nauticas/b/132",
+      "tipo": "Directorio de servicios náuticos",
+      "verificacion": "No verificado oficialmente"
+    }
+  ],
+  "metodologia_recomendada_obtencion_datos": {
+    "opcion_1": {
+      "metodo": "Solicitud formal a DGMM",
+      "procedimiento": "Registro Electrónico del Ministerio",
+      "ventajas": "Datos oficiales completos",
+      "desventajas": "Proceso burocrático, tiempos largos",
+      "probabilidad_exito": "Media - depende de si consideran la información pública"
+    },
+    "opcion_2": {
+      "metodo": "Recopilación manual por CCAA",
+      "procedimiento": "Consulta individual de registros autonómicos",
+      "ventajas": "Acceso público en algunas CCAA",
+      "desventajas": "Muy laborioso, información fragmentada",
+      "probabilidad_exito": "Alta - pero requiere mucho trabajo manual"
+    },
+    "opcion_3": {
+      "metodo": "Web scraping de directorios comerciales",
+      "procedimiento": "Automatización de extracción de InfoIsInfo, Google Maps, etc.",
+      "ventajas": "Rápido, escalable",
+      "desventajas": "Requiere validación manual, datos sin verificar oficialmente",
+      "probabilidad_exito": "Alta - pero calidad de datos variable"
+    },
+    "opcion_4": {
+      "metodo": "Contacto con asociaciones sectoriales",
+      "procedimiento": "ANEN (Asociación Nacional de Empresas Náuticas) y asociaciones regionales",
+      "ventajas": "Perspectiva del sector",
+      "desventajas": "Pueden no compartir datos completos",
+      "probabilidad_exito": "Media"
+    }
+  },
+  "notas_importantes": [
+    "NO existe un registro centralizado público de escuelas náuticas de recreo en España",
+    "La regulación está descentralizada en 11 CCAA con competencias transferidas",
+    "Cada CCAA mantiene su propio sistema de homologación y registro",
+    "Las plataformas privadas ofrecen listados parciales no oficiales",
+    "Para un directorio completo, se requiere trabajo de recopilación manual o scraping + validación"
+  ]
+}

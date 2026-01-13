@@ -1,0 +1,6 @@
+school_id,school_name,status,fields_updated,error,cost,duration_ms,website
+"32-pies-yachtingworks-escuela-nautica-y-charter-93","32 Pies & Yachtingworks; Escuela Náutica y charter.","failure","","Scrape failed: Page not found",0,107,"http://www.32pies.com/"
+"a-son-de-mar-escuela-nautica-6","A Son de Mar Escuela Náutica","success","Services","",0.003155,3459,"http://asondemar.net/"
+"academia-nautica-arana-82","Academia Náutica Araña","success","City;Area;Location;Services;Facebook;Instagram","",0.002885,4707,"https://www.academianauticaarana.com/"
+"academia-nautica-arcos-79","Academia náutica ARCOS","success","City;Area;Location;Services;Facebook","",0.00364,4430,"https://academianauticaarcos.com/"
+"academia-nautica-blanco-80","Academia Náutica Blanco","success","City;Area;Location;Services;Facebook","",0.0029779999999999997,4126,"http://www.academianauticablanco.com/"

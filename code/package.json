@@ -1,0 +1,53 @@
+{
+  "name": "code",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "postinstall": "prisma generate",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:status": "prisma migrate status",
+    "db:migrate:reset": "prisma migrate reset",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "enrich-schools": "bash scripts/enrich-schools/run.sh",
+    "enrich-schools:execute": "bash scripts/enrich-schools/run.sh --execute"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.36.5",
+    "@notionhq/client": "^2.2.15",
+    "@prisma/client": "^6.1.0",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^5.1.2",
+    "cheerio": "^1.1.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "jsdom": "^27.4.0",
+    "prisma": "^6.1.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "vitest": "^4.0.16"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+enrich-schools-report-*.md
+enrich-schools-results-*.csv
+dist/

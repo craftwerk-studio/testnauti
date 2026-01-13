@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestNauti.co - Complete Website Mockups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Quicksand:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Brand Colors */
+            --vibrant-blue: #00D4FF;
+            --deep-navy: #002244;
+            --accent-teal: #20E2D8;
+            --coral-accent: #FF6B6B;
+            --sunny-orange: #FFB800;
+            --white: #FFFFFF;
+            --sky-light: #E0F7FA;
+            --sky-medium: #B2EBF2;
+            --sand-beige: #FFF3E0;
+            --text-dark: #1A1A1A;
+            --text-gray: #6B7280;
+            
+            /* Gradients */
+            --gradient-ocean: linear-gradient(135deg, #00D4FF 0%, #20E2D8 50%, #B2EBF2 100%);
+            --gradient-sunset: linear-gradient(135deg, #FF6B6B 0%, #FFB800 100%);
+            --gradient-deep-ocean: linear-gradient(135deg, #002244 0%, #004488 100%);
+            --gradient-crystal: linear-gradient(135deg, #00D4FF 0%, #20E2D8 50%, #B2EBF2 100%);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            color: var(--text-dark);
+        }
+
+        .mockup-container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .mockup-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: var(--gradient-ocean);
+            border-radius: 20px;
+            color: white;
+        }
+
+        .mockup-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .mockup-section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 6px solid var(--vibrant-blue);
+        }
+
+        .device-container {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .device {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .device-label {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            padding: 15px 25px;
+            background: var(--deep-navy);
+            color: white;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .device-screen {
+            padding: 0;
+            background: white;
+            min-height: 600px;
+        }
+
+        /* Desktop mockup */
+        .desktop {
+            flex: 2;
+            min-width: 600px;
+        }
+
+        /* Mobile mockup */
+        .mobile {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        /* Common Page Elements */
+        .page-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            border-bottom: 2px solid var(--sky-light);
+        }
+
+        .page-nav-logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            background: var(--gradient-ocean);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-nav-links {
+            display: flex;
+            gap: 30px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .page-nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .page-nav-links a:hover {
+            color: var(--vibrant-blue);
+        }
+
+        .nav-cta {
+            padding: 10px 25px;
+            background: var(--gradient-ocean);
+            color: white;
+            border-radius: 25px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-ocean);
+            padding: 80px 40px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '🌊';
+            position: absolute;
+            font-size: 10rem;
+            opacity: 0.1;
+            right: 10%;
+            top: 20%;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--vibrant-blue);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 255, 255, 0.6);
+        }
+
+        .btn-secondary {
+            background: var(--gradient-sunset);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 107, 0.6);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--vibrant-blue);
+            transform: translateY(-3px);
+        }
+
+        .btn-ocean {
+            background: var(--gradient-ocean);
+            color: white;
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn-ocean:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 212, 255, 0.6);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 40px;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid var(--vibrant-blue);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-ocean);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--deep-navy);
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Exam Cards */
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            background: var(--sky-light);
+        }
+
+        .exam-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .exam-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        .exam-card-header {
+            background: var(--gradient-ocean);
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .exam-card-header h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .exam-card-body {
+            padding: 25px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .exam-stats {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            background: var(--sky-light);
+            border-radius: 12px;
+        }
+
+        .stat-value {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--vibrant-blue);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin-top: 5px;
+        }
+
+        /* Dashboard */
+        .dashboard {
+            padding: 40px;
+            background: var(--sky-light);
+        }
+
+        .dashboard-header {
+            margin-bottom: 40px;
+        }
+
+        .dashboard-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 10px;
+        }
+
+        .dashboard-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-card-value {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            background: var(--gradient-ocean);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-card-label {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            color: var(--text-gray);
+            margin-top: 8px;
+        }
+
+        /* Progress Bar */
+        .progress-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .progress-bar {
+            height: 20px;
+            background: var(--sky-light);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-ocean);
+            transition: width 0.3s;
+        }
+
+        /* Auth Pages */
+        .auth-container {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-ocean);
+            padding: 40px 20px;
+        }
+
+        .auth-card {
+            background: white;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .auth-card h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 10px;
+        }
+
+        .auth-card p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            color: var(--deep-navy);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid var(--sky-light);
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--vibrant-blue);
+            box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.1);
+        }
+
+        .divider {
+            text-align: center;
+            margin: 30px 0;
+            color: var(--text-gray);
+            position: relative;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background: var(--sky-light);
+        }
+
+        .divider::before { left: 0; }
+        .divider::after { right: 0; }
+
+        /* Footer */
+        .footer {
+            background: var(--deep-navy);
+            color: white;
+            padding: 50px 40px 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--vibrant-blue);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-teal);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Test Interface */
+        .test-container {
+            padding: 40px;
+            background: white;
+        }
+
+        .test-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background: var(--gradient-ocean);
+            border-radius: 15px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .test-timer {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .question-card {
+            background: white;
+            border: 2px solid var(--sky-light);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .question-number {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: var(--vibrant-blue);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .question-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option {
+            padding: 20px 25px;
+            border: 2px solid var(--sky-light);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .option:hover {
+            border-color: var(--vibrant-blue);
+            background: var(--sky-light);
+            transform: translateX(5px);
+        }
+
+        .option.selected {
+            border-color: var(--vibrant-blue);
+            background: var(--sky-light);
+        }
+
+        /* Mobile Specific */
+        @media (max-width: 768px) {
+            .page-nav {
+                padding: 15px 20px;
+            }
+
+            .page-nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features {
+                padding: 40px 20px;
+            }
+
+            .exam-grid {
+                padding: 20px;
+                grid-template-columns: 1fr;
+            }
+
+            .dashboard {
+                padding: 20px;
+            }
+        }
+
+        /* Mobile Nav */
+        .mobile .page-nav-links {
+            display: none;
+        }
+
+        .mobile-menu-icon {
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        .desktop .mobile-menu-icon {
+            display: none;
+        }
+
+        /* Exam Detail Page */
+        .exam-detail {
+            padding: 40px;
+            background: var(--sky-light);
+        }
+
+        .exam-detail-header {
+            background: var(--gradient-ocean);
+            padding: 60px 40px;
+            border-radius: 20px;
+            color: white;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .exam-detail-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .exam-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .info-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info-value {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--vibrant-blue);
+        }
+
+        .info-label {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .start-section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .toggle-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: var(--sky-light);
+            border-radius: 15px;
+        }
+
+        .toggle-option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .toggle-switch {
+            width: 60px;
+            height: 30px;
+            background: var(--gradient-ocean);
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            top: 3px;
+            right: 3px;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="mockup-container">
+        <!-- Header -->
+        <div class="mockup-header">
+            <h1>TestNauti.co</h1>
+            <p style="font-family: 'Quicksand', sans-serif; font-size: 1.2rem; margin-top: 10px;">Complete Website Mockups - High Fidelity Designs</p>
+            <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 15px;">Updated Brand • No Blue-to-Coral Gradient • Vibrant Marine Energy</p>
+        </div>
+
+        <!-- 1. LANDING PAGE -->
+        <div class="mockup-section">
+            <h2 class="section-title">1. Landing / Home Page</h2>
+            
+            <div class="device-container">
+                <!-- Desktop View -->
+                <div class="device desktop">
+                    <div class="device-label">🖥️ DESKTOP VIEW (1440px)</div>
+                    <div class="device-screen">
+                        <!-- Navigation -->
+                        <div class="page-nav">
+                            <div class="page-nav-logo">TestNauti.co ⚓</div>
+                            <div class="page-nav-links">
+                                <a href="#">Exams</a>
+                                <a href="#">Features</a>
+                                <a href="#">Pricing</a>
+                                <a href="#">About</a>
+                                <a href="#" class="nav-cta">Start Practicing</a>
+                            </div>
+                        </div>
+
+                        <!-- Hero Section -->
+                        <div class="hero">
+                            <h1>Navigate Your Success</h1>
+                            <p>Practice real PER exams. Pass with confidence.</p>
+                            <div class="hero-buttons">
+                                <a href="#" class="btn btn-primary">Start Free Practice</a>
+                                <a href="#" class="btn btn-outline">View Exam Catalog</a>
+                            </div>
+                        </div>
+
+                        <!-- Features Section -->
+                        <div class="features">
+                            <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.5rem; color: var(--deep-navy); text-align: center; margin-bottom: 20px;">Why TestNauti.co?</h2>
+                            <p style="text-align: center; color: var(--text-gray); margin-bottom: 30px;">Everything you need to ace your PER certification</p>
+                            
+                            <div class="features-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">📚</div>
+                                    <h3>Real Exam Questions</h3>
+                                    <p>Practice with authentic PER exam questions from past years</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">⚡</div>
+                                    <h3>Instant Feedback</h3>
+                                    <p>Get detailed explanations for every answer immediately</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">📊</div>
+                                    <h3>Progress Tracking</h3>
+                                    <p>Monitor your performance across all topics and improve</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">🎯</div>
+                                    <h3>Timed Practice</h3>
+                                    <p>Simulate real exam conditions with customizable timers</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">🌊</div>
+                                    <h3>Topic-Focused</h3>
+                                    <p>Study specific areas: navigation, safety, regulations, and more</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">🏆</div>
+                                    <h3>Exam Ready</h3>
+                                    <p>Build confidence with comprehensive exam preparation</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Section -->
+                        <div style="background: var(--gradient-ocean); padding: 60px 40px; text-align: center; color: white;">
+                            <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.5rem; margin-bottom: 20px;">Ready to Start Your Journey?</h2>
+                            <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.95;">Join hundreds of successful PER candidates</p>
+                            <a href="#" class="btn btn-primary">Create Free Account</a>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="footer">
+                            <div class="footer-content">
+                                <div class="footer-section">
+                                    <h3>TestNauti.co</h3>
+                                    <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">Your trusted platform for PER exam preparation. Navigate your path to success.</p>
+                                </div>
+                                <div class="footer-section">
+                                    <h3>Exams</h3>
+                                    <ul class="footer-links">
+                                        <li><a href="#">PER Practice Tests</a></li>
+                                        <li><a href="#">Topic Reviews</a></li>
+                                        <li><a href="#">Past Exams</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-section">
+                                    <h3>Resources</h3>
+                                    <ul class="footer-links">
+                                        <li><a href="#">Study Guides</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Support</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-section">
+                                    <h3>Company</h3>
+                                    <ul class="footer-links">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-bottom">
+                                <p>© 2025 TestNauti.co - Navigate Your Success ⚓ 🌊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="device mobile">
+                    <div class="device-label">📱 MOBILE VIEW (375px)</div>
+                    <div class="device-screen">
+                        <!-- Mobile Navigation -->
+                        <div class="page-nav">
+                            <div class="page-nav-logo" style="font-size: 1.2rem;">TestNauti.co</div>
+                            <div class="mobile-menu-icon">☰</div>
+                        </div>
+
+                        <!-- Mobile Hero -->
+                        <div class="hero" style="padding: 50px 25px;">
+                            <h1 style="font-size: 2rem;">Navigate Your Success</h1>
+                            <p style="font-size: 1rem;">Practice real PER exams. Pass with confidence.</p>
+                            <div class="hero-buttons" style="flex-direction: column; width: 100%;">
+                                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Start Free Practice</a>
+                                <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">View Catalog</a>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Features -->
+                        <div class="features" style="padding: 40px 25px;">
+                            <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.8rem; color: var(--deep-navy); text-align: center; margin-bottom: 30px;">Why TestNauti.co?</h2>
+                            
+                            <div class="features-grid" style="grid-template-columns: 1fr;">
+                                <div class="feature-card">
+                                    <div class="feature-icon">📚</div>
+                                    <h3>Real Exam Questions</h3>
+                                    <p>Practice with authentic PER questions</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">⚡</div>
+                                    <h3>Instant Feedback</h3>
+                                    <p>Detailed explanations immediately</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">📊</div>
+                                    <h3>Progress Tracking</h3>
+                                    <p>Monitor your performance</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile CTA -->
+                        <div style="background: var(--gradient-ocean); padding: 40px 25px; text-align: center; color: white;">
+                            <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.8rem; margin-bottom: 15px;">Ready to Start?</h2>
+                            <p style="margin-bottom: 25px;">Join successful PER candidates</p>
+                            <a href="#" class="btn btn-primary" style="width: 100%;">Create Free Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. EXAM CATALOG PAGE -->
+        <div class="mockup-section">
+            <h2 class="section-title">2. Exam Catalog Page</h2>
+            
+            <div class="device-container">
+                <!-- Desktop View -->
+                <div class="device desktop">
+                    <div class="device-label">🖥️ DESKTOP VIEW</div>
+                    <div class="device-screen">
+                        <div class="page-nav">
+                            <div class="page-nav-logo">TestNauti.co ⚓</div>
+                            <div class="page-nav-links">
+                                <a href="#">Exams</a>
+                                <a href="#">Dashboard</a>
+                                <a href="#">Profile</a>
+                                <a href="#" class="nav-cta">Juan García</a>
+                            </div>
+                        </div>
+
+                        <div style="padding: 40px; background: var(--sky-light);">
+                            <div style="margin-bottom: 40px;">
+                                <h1 style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 2.5rem; color: var(--deep-navy); margin-bottom: 10px;">PER Practice Exams</h1>
+                                <p style="color: var(--text-gray); font-size: 1.1rem;">Choose an exam to start practicing</p>
+                            </div>
+
+                            <div class="exam-grid">
+                                <!-- Exam Card 1 -->
+                                <div class="exam-card">
+                                    <div class="exam-card-header">
+                                        <h3>2024 Biology Midterm</h3>
+                                        <p style="opacity: 0.9; margin-top: 5px;">Navigation & Safety</p>
+                                    </div>
+                                    <div class="exam-card-body">
+                                        <div class="exam-meta">
+                                            <span>📝 45 Questions</span>
+                                            <span>⏱️ 60 mins</span>
+                                        </div>
+                                        <div class="exam-stats">
+                                            <div class="stat">
+                                                <div class="stat-value">85%</div>
+                                                <div class="stat-label">Your Best</div>
+                                            </div>
+                                            <div class="stat">
+                                                <div class="stat-value">3</div>
+                                                <div class="stat-label">Attempts</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-ocean" style="width: 100%; text-align: center;">Start Exam</a>
+                                    </div>
+                                </div>
+
+                                <!-- Exam Card 2 -->
+                                <div class="exam-card">
+                                    <div class="exam-card-header" style="background: var(--gradient-sunset);">
+                                        <h3>2023 Math Paper 1</h3>
+                                        <p style="opacity: 0.9; margin-top: 5px;">Maritime Regulations</p>
+                                    </div>
+                                    <div class="exam-card-body">
+                                        <div class="exam-meta">
+                                            <span>📝 50 Questions</span>
+                                            <span>⏱️ 75 mins</span>
+                                        </div>
+                                        <div class="exam-stats">
+                                            <div class="stat">
+                                                <div class="stat-value">92%</div>
+                                                <div class="stat-label">Your Best</div>
+                                            </div>
+                                            <div class="stat">
+                                                <div class="stat-value">5</div>
+                                                <div class="stat-label">Attempts</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center;">Start Exam</a>
+                                    </div>
+                                </div>
+
+                                <!-- Exam Card 3 -->
+                                <div class="exam-card">
+                                    <div class="exam-card-header" style="background: var(--gradient-deep-ocean);">
+                                        <h3>2022 Physics Final</h3>
+                                        <p style="opacity: 0.9; margin-top: 5px;">Seamanship & Theory</p>
+                                    </div>
+                                    <div class="exam-card-body">
+                                        <div class="exam-meta">
+                                            <span>📝 40 Questions</span>
+                                            <span>⏱️ 50 mins</span>
+                                        </div>
+                                        <div class="exam-stats">
+                                            <div class="stat">
+                                                <div class="stat-value">—</div>
+                                                <div class="stat-label">Not Started</div>
+                                            </div>
+                                            <div class="stat">
+                                                <div class="stat-value">0</div>
+                                                <div class="stat-label">Attempts</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-ocean" style="width: 100%; text-align: center;">Start Exam</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="device mobile">
+                    <div class="device-label">📱 MOBILE VIEW</div>
+                    <div class="device-screen">
+                        <div class="page-nav">
+                            <div class="page-nav-logo" style="font-size: 1.2rem;">TestNauti.co</div>
+                            <div class="mobile-menu-icon">☰</div>
+                        </div>
+
+                        <div style="padding: 25px; background: var(--sky-light);">
+                            <h1 style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.8rem; color: var(--deep-navy); margin-bottom: 10px;">PER Practice Exams</h1>
+                            <p style="color: var(--text-gray); margin-bottom: 30px;">Choose an exam to practice</p>
+
+                            <div style="display: flex; flex-direction: column; gap: 25px;">
+                                <!-- Mobile Exam Card -->
+                                <div class="exam-card">
+                                    <div class="exam-card-header">
+                                        <h3>2024 Biology Midterm</h3>
+                                        <p style="opacity: 0.9; margin-top: 5px;">45 Questions • 60 mins</p>
+                                    </div>
+                                    <div class="exam-card-body">
+                                        <div class="exam-stats">
+                                            <div class="stat">
+                                                <div class="stat-value">85%</div>
+                                                <div class="stat-label">Best Score</div>
+                                            </div>
+                                            <div class="stat">
+                                                <div class="stat-value">3</div>
+                                                <div class="stat-label">Attempts</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-ocean" style="width: 100%; text-align: center; padding: 15px;">Start Exam</a>
+                                    </div>
+                                </div>
+
+                                <div class="exam-card">
+                                    <div class="exam-card-header" style="background: var(--gradient-sunset);">
+                                        <h3>2023 Math Paper 1</h3>
+                                        <p style="opacity: 0.9; margin-top: 5px;">50 Questions • 75 mins</p>
+                                    </div>
+                                    <div class="exam-card-body">
+                                        <div class="exam-stats">
+                                            <div class="stat">
+                                                <div class="stat-value">92%</div>
+                                                <div class="stat-label">Best Score</div>
+                                            </div>
+                                            <div class="stat">
+                                                <div class="stat-value">5</div>
+                                                <div class="stat-label">Attempts</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 15px;">Start Exam</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. EXAM DETAIL / START PAGE -->
+        <div class="mockup-section">
+            <h2 class="section-title">3. Exam Detail / Start Page</h2>
+            
+            <div class="device-container">
+                <!-- Desktop View -->
+                <div class="device desktop">
+                    <div class="device-label">🖥️ DESKTOP VIEW</div>
+                    <div class="device-screen">
+                        <div class="page-nav">
+                            <div class="page-nav-logo">TestNauti.co ⚓</div>
+                            <div class="page-nav-links">
+                                <a href="#">← Back to Exams</a>
+                                <a href="#">Dashboard</a>
+                                <a href="#" class="nav-cta">Juan García</a>
+                            </div>
+                        </div>
+
+                        <div class="exam-detail">
+                            <div class="exam-detail-header">
+                                <h1>2024 Biology Midterm</h1>
+                                <p style="font-size: 1.2rem; opacity: 0.95;">Navigation & Safety • PER Certification Practice</p>
+                            </div>
+
+                            <div class="exam-info-grid">
+                                <div class="info-card">
+                                    <div class="info-icon">📝</div>
+                                    <div class="info-value">45</div>
+                                    <div class="info-label">Questions</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon">⏱️</div>
+                                    <div class="info-value">60</div>
+                                    <div class="info-label">Minutes</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon">🎯</div>
+                                    <div class="info-value">85%</div>
+                                    <div class="info-label">Your Best</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon">🔄</div>
+                                    <div class="info-value">3</div>
+                                    <div class="info-label">Attempts</div>
+                                </div>
+                            </div>
+
+                            <div class="start-section">
+                                <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2rem; color: var(--deep-navy); margin-bottom: 20px;">Ready to Start?</h2>
+                                <p style="color: var(--text-gray); margin-bottom: 30px; font-size: 1.1rem;">Configure your exam settings below</p>
+
+                                <div class="toggle-section">
+                                    <h3 style="font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--deep-navy); margin-bottom: 20px;">Exam Settings</h3>
+                                    
+                                    <div class="toggle-option">
+                                        <div class="toggle-switch"></div>
+                                        <div style="text-align: left;">
+                                            <div style="font-family: 'Quicksand', sans-serif; font-weight: 600; color: var(--deep-navy); margin-bottom: 5px;">Enable Timer</div>
+                                            <div style="font-size: 0.9rem; color: var(--text-gray);">Simulate real exam conditions with a 60-minute countdown</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="toggle-option">
+                                        <div class="toggle-switch"></div>
+                                        <div style="text-align: left;">
+                                            <div style="font-family: 'Quicksand', sans-serif; font-weight: 600; color: var(--deep-navy); margin-bottom: 5px;">Shuffle Questions</div>
+                                            <div style="font-size: 0.9rem; color: var(--text-gray);">Randomize question order for varied practice</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="toggle-option">
+                                        <div class="toggle-switch"></div>
+                                        <div style="text-align: left;">
+                                            <div style="font-family: 'Quicksand', sans-serif; font-weight: 600; color: var(--deep-navy); margin-bottom: 5px;">Show Explanations</div>
+                                            <div style="font-size: 0.9rem; color: var(--text-gray);">View detailed explanations after each question</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn-ocean" style="font-size: 1.2rem; padding: 20px 50px; margin-top: 20px;">Start Test Now</a>
+                                
+                                <p style="margin-top: 20px; color: var(--text-gray); font-size: 0.9rem;">Your progress will be automatically saved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="device mobile">
+                    <div class="device-label">📱 MOBILE VIEW</div>
+                    <div class="device-screen">
+                        <div class="page-nav">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span>←</span>
+                                <div class="page-nav-logo" style="font-size: 1.2rem;">TestNauti.co</div>
+                            </div>
+                            <div class="mobile-menu-icon">☰</div>
+                        </div>
+
+                        <div class="exam-detail" style="padding: 25px;">
+                            <div class="exam-detail-header" style="padding: 40px 25px;">
+                                <h1 style="font-size: 1.8rem;">2024 Biology Midterm</h1>
+                                <p style="font-size: 1rem; opacity: 0.95; margin-top: 10px;">Navigation & Safety</p>
+                            </div>
+
+                            <div class="exam-info-grid" style="grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                                <div class="info-card">
+                                    <div class="info-icon" style="font-size: 2rem;">📝</div>
+                                    <div class="info-value" style="font-size: 1.5rem;">45</div>
+                                    <div class="info-label">Questions</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon" style="font-size: 2rem;">⏱️</div>
+                                    <div class="info-value" style="font-size: 1.5rem;">60</div>
+                                    <div class="info-label">Minutes</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon" style="font-size: 2rem;">🎯</div>
+                                    <div class="info-value" style="font-size: 1.5rem;">85%</div>
+                                    <div class="info-label">Your Best</div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon" style="font-size: 2rem;">🔄</div>
+                                    <div class="info-value" style="font-size: 1.5rem;">3</div>
+                                    <div class="info-label">Attempts</div>
+                                </div>
+                            </div>
+
+                            <div class="start-section" style="padding: 30px 20px;">
+                                <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; color: var(--deep-navy); margin-bottom: 15px;">Ready to Start?</h2>
+
+                                <div class="toggle-section" style="padding: 20px;">
+                                    <div class="toggle-option" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+                                        <div style="display: flex; justify-content: space-between; width: 100%;">
+                                            <span style="font-family: 'Quicksand', sans-serif; font-weight: 600;">Enable Timer</span>
+                                            <div class="toggle-switch" style="width: 50px; height: 26px;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="toggle-option" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+                                        <div style="display: flex; justify-content: space-between; width: 100%;">
+                                            <span style="font-family: 'Quicksand', sans-serif; font-weight: 600;">Shuffle Questions</span>
+                                            <div class="toggle-switch" style="width: 50px; height: 26px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn-ocean" style="width: 100%; text-align: center; padding: 18px; margin-top: 20px;">Start Test Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. TEST INTERFACE PAGE -->
+        <div class="mockup-section">
+            <h2 class="section-title">4. Test Interface (During Exam)</h2>
+            
+            <div class="device-container">
+                <!-- Desktop View -->
+                <div class="device desktop">
+                    <div class="device-label">🖥️ DESKTOP VIEW</div>
+                    <div class="device-screen">
+                        <div class="test-container">
+                            <div class="test-header">
+                                <div>
+                                    <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 5px;">2024 Biology Midterm</div>
+                                    <div style="font-family: 'Quicksand', sans-serif; font-weight: 600;">Question 15 of 45</div>
+                                </div>
+                                <div class="test-timer">⏱️ 42:18</div>
+                            </div>
+
+                            <div class="question-card">
+                                <div class="question-number">QUESTION 15</div>
+                                <div class="question-text">
+                                    According to COLREG (International Regulations for Preventing Collisions at Sea), when two power-driven vessels are meeting head-on, what action should each vessel take?
+                                </div>
+
+                                <div class="options">
+                                    <div class="option">
+                                        <strong>A)</strong> Each vessel should alter course to starboard so they pass port to port
+                                    </div>
+                                    <div class="option selected">
+                                        <strong>B)</strong> Each vessel should alter course to port so they pass starboard to starboard
+                                    </div>
+                                    <div class="option">
+                                        <strong>C)</strong> The vessel on the left should give way to the vessel on the right
+                                    </div>
+                                    <div class="option">
+                                        <strong>D)</strong> Both vessels should reduce speed and wait for radio communication
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; justify-content: space-between; padding: 0 40px 40px;">
+                                <a href="#" class="btn" style="background: var(--sky-light); color: var(--deep-navy);">← Previous</a>
+                                <a href="#" class="btn btn-ocean">Next Question →</a>
+                            </div>
+
+                            <div style="padding: 30px 40px; background: var(--sky-light); border-radius: 15px; margin: 0 40px;">
+                                <div style="font-family: 'Quicksand', sans-serif; font-weight: 600; margin-bottom: 15px; color: var(--deep-navy);">Progress: 33% Complete</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 33%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="device mobile">
+                    <div class="device-label">📱 MOBILE VIEW</div>
+                    <div class="device-screen">
+                        <div class="test-container" style="padding: 20px;">
+                            <div class="test-header" style="padding: 15px 20px; flex-direction: column; gap: 10px; align-items: flex-start;">
+                                <div style="display: flex; justify-content: space-between; width: 100%;">
+                                    <span style="font-family: 'Quicksand', sans-serif; font-weight: 600; font-size: 0.9rem;">Question 15/45</span>
+                                    <span class="test-timer" style="font-size: 1.2rem;">⏱️ 42:18</span>
+                                </div>
+                            </div>
+
+                            <div class="question-card" style="padding: 25px;">
+                                <div class="question-number">QUESTION 15</div>
+                                <div class="question-text" style="font-size: 1.1rem;">
+                                    According to COLREG, when two power-driven vessels are meeting head-on, what action should each vessel take?
+                                </div>
+
+                                <div class="options">
+                                    <div class="option" style="padding: 15px;">
+                                        <strong>A)</strong> Alter course to starboard, pass port to port
+                                    </div>
+                                    <div class="option selected" style="padding: 15px;">
+                                        <strong>B)</strong> Alter course to port, pass starboard to starboard
+                                    </div>
+                                    <div class="option" style="padding: 15px;">
+                                        <strong>C)</strong> Left vessel gives way to right
+                                    </div>
+                                    <div class="option" style="padding: 15px;">
+                                        <strong>D)</strong> Reduce speed, wait for radio
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 10px; padding: 0 20px 20px;">
+                                <a href="#" class="btn" style="background: var(--sky-light); color: var(--deep-navy); flex: 1; text-align: center; padding: 15px;">← Prev</a>
+                                <a href="#" class="btn btn-ocean" style="flex: 2; text-align: center; padding: 15px;">Next →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. DASHBOARD PAGE -->
+        <div class="mockup-section">
+            <h2 class="section-title">5. Dashboard Page</h2>
+            
+            <div class="device-container">
+                <!-- Desktop View -->
+                <div class="device desktop">
+                    <div class="device-label">🖥️ DESKTOP VIEW</div>
+                    <div class="device-screen">
+                        <div class="page-nav">
+                            <div class="page-nav-logo">TestNauti.co ⚓</div>
+                            <div class="page-nav-links">
+                                <a href="#">Dashboard</a>
+                                <a href="#">Exams</a>
+                                <a href="#">Progress</a>
+                                <a href="#" class="nav-cta">Juan García</a>
+                            </div>
+                        </div>
+
+                        <div class="dashboard">
+                            <div class="dashboard-header">
+                                <h1>Welcome back, Juan! 👋</h1>
+                                <p style="color: var(--text-gray); font-size: 1.1rem;">Here's your PER exam preparation progress</p>
+                            </div>
+
+                            <div class="dashboard-stats">
+                                <div class="stat-card">
+                                    <div class="stat-card-value">8</div>
+                                    <div class="stat-card-label">Exams Completed</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-value">87%</div>
+                                    <div class="stat-card-label">Average Score</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-value">12</div>
+                                    <div class="stat-card-label">Study Hours</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-value">🔥 7</div>
+                                    <div class="stat-card-label">Day Streak</div>
+                                </div>
+                            </div>
+
+                            <div class="progress-section">
+                                <h3 style="font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--deep-navy); margin-bottom: 20px;">Overall Progress</h3>
+                                
+                                <div style="margin-bottom: 25px;">
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                        <span style="font-family: 'Quicksand', sans-serif; font-weight: 600;">Navigation & Charts</span>
+                                        <span style="color: var(--vibrant-blue); font-weight: 600;">92%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92%;"></div>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: 25px;">
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                        <span style="font-family: 'Quicksand', sans-serif; font-weight: 600;">Safety & Emergency</span>
+                                        <span style="color: var(--vibrant-blue); font-weight: 600;">78%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 78%;"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                        <span style="font-family: 'Quicksand', sans-serif; font-weight: 600;">Maritime Regulations</span>
+                                        <span style="color: var(--vibrant-blue); font-weight: 600;">85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);">
+                                <h3 style="font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--deep-navy); margin-bottom: 20px;">Recent Attempts</h3>
+                                
+                                <div style="display: flex; flex-direction: column; gap: 15px;">
+                                    <div style="padding: 20px; background: var(--sky-light); border-radius: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                        <div>
+                                            <div style="font-family: 'Quicksand', sans-serif; font-weight: 600; color: var(--deep-navy); margin-bottom: 5px;">2024 Biology Midterm</div>
+                                            <div style="font-size: 0.9rem; color: var(--text-gray);">Completed 2 hours ago</div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <div style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; color: var(--accent-teal);">85%</div>
+                                            <div style="font-size: 0.85rem; color: var(--text-gray);">38/45 correct</div>
+                                        </div>
+                                    </div>
+
+                                    <div style="padding: 20px; background: var(--sky-light); border-radius: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                        <div>
+                                            <div style="font-family: 'Quicksand', sans-serif; font-weight: 600; color: var(--deep-navy); margin-bottom: 5px;">2023 Math Paper 1</div>
+                                            <div style="font-size: 0.9rem; color: var(--text-gray);">Completed yesterday</div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <div style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; color: var(--sunny-orange);">92%</div>
+                                            <div style="font-size: 0.85rem; color: var(--text-gray);">46/50 correct</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" style="display: inline-block; margin-top: 20px; color: var(--vibrant-blue); font-family: 'Quicksand', sans-serif; font-weight: 600; text-decoration: none;">View All Attempts →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="device mobile">
+                    <div class="device-label">📱 MOBILE VIEW</div>
+                    <div class="device-screen">
+                        <div class="page-nav">
+                            <div class="page-nav-logo" style="font-size: 1.2rem;">TestNauti.co</div>
+                            <div class="mobile-menu-icon">☰</div>
+                        </div>
+
+                        <div class="dashboard" style="padding: 25px;">
+                            <div class="dashboard-header" style="margin-bottom: 30px;">
+                                <h1 style="font-size: 1.8rem;">Welcome, Juan! 👋</h1>
+                                <p style="color: var(--text-gray);">Your PER prep progress</p>
+                            </div>
+
+                            <div class="dashboard-stats" style="grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 30px;">
+                                <div class="stat-card">
+                                    <div class="stat-card-value" style="font-size: 2rem;">8</div>
+                                    <div class="stat-card-label">Completed</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-value" style="font-size: 2rem;">87%</div>
+                                    <div class="stat-card-label">Avg Score</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-value" style="font-size: 2rem;">12</div>
+                                    <div class="stat-card-label">Hours</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-value" style="font-size: 2rem;">🔥 7</div>
+                                    <div class="stat-card-label">Streak</div>
+                                </div>
+                            </div>
+
+                            <div class="progress-section" style="padding: 20px; margin-bottom: 20px;">
+                                <h3 style="font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--deep-navy); margin-bottom: 15px; font-size: 1.2rem;">Progress</h3>
+                                
+                                <div style="margin-bottom: 20px;">
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem;">
+                                        <span style="font-weight: 600;">Navigation</span>
+                                        <span style="color: var(--vibrant-blue); font-weight: 600;">92%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92%;"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem;">
+                                        <span style="font-weight: 600;">Safety</span>
+                                        <span style="color: var(--vibrant-blue); font-weight: 600;">78%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 78%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. SIGN UP PAGE -->
+        <div class="mockup-section">
+            <h2 class="section-title">6. Sign Up Page</h2>
+            
+            <div class="device-container">
+                <!-- Desktop View -->
+                <div class="device desktop">
+                    <div class="device-label">🖥️ DESKTOP VIEW</div>
+                    <div class="device-screen">
+                        <div class="auth-container">
+                            <div class="auth-card">
+                                <div style="text-align: center; margin-bottom: 30px;">
+                                    <div style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 2rem; background: var(--gradient-ocean); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 10px;">TestNauti.co ⚓</div>
+                                </div>
+
+                                <h2>Create Your Account</h2>
+                                <p>Start your PER exam preparation journey</p>
+
+                                <form>
+                                    <div class="form-group">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-input" placeholder="Juan García">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-input" placeholder="your.email@example.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-input" placeholder="Create a strong password">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-ocean" style="width: 100%; margin-top: 10px;">Create Account</button>
+                                </form>
+
+                                <div class="divider">or</div>
+
+                                <button class="btn" style="width: 100%; background: white; border: 2px solid var(--sky-light); color: var(--text-dark); margin-bottom: 10px;">
+                                    <span style="margin-right: 10px;">🔵</span> Continue with Google
+                                </button>
+
+                                <p style="text-align: center; margin-top: 20px; color: var(--text-gray); font-size: 0.9rem;">
+                                    Already have an account? <a href="#" style="color: var(--vibrant-blue); font-weight: 600; text-decoration: none;">Sign In</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="device mobile">
+                    <div class="device-label">📱 MOBILE VIEW</div>
+                    <div class="device-screen">
+                        <div class="auth-container" style="padding: 30px 20px;">
+                            <div class="auth-card" style="padding: 35px 25px;">
+                                <div style="text-align: center; margin-bottom: 25px;">
+                                    <div style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.5rem; background: var(--gradient-ocean); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TestNauti.co ⚓</div>
+                                </div>
+
+                                <h2 style="font-size: 1.5rem;">Create Account</h2>
+                                <p style="font-size: 0.9rem;">Start your PER prep journey</p>
+
+                                <form>
+                                    <div class="form-group">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-input" placeholder="Juan García">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-input" placeholder="your.email@example.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-input" placeholder="Strong password">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-ocean" style="width: 100%; margin-top: 10px;">Create Account</button>
+                                </form>
+
+                                <div class="divider" style="margin: 20px 0;">or</div>
+
+                                <button class="btn" style="width: 100%; background: white; border: 2px solid var(--sky-light); color: var(--text-dark); padding: 12px; font-size: 0.9rem;">
+                                    🔵 Continue with Google
+                                </button>
+
+                                <p style="text-align: center; margin-top: 15px; color: var(--text-gray); font-size: 0.85rem;">
+                                    Have an account? <a href="#" style="color: var(--vibrant-blue); font-weight: 600; text-decoration: none;">Sign In</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. LOGIN PAGE -->
+        <div class="mockup-section">
+            <h2 class="section-title">7. Login Page</h2>
+            
+            <div class="device-container">
+                <!-- Desktop View -->
+                <div class="device desktop">
+                    <div class="device-label">🖥️ DESKTOP VIEW</div>
+                    <div class="device-screen">
+                        <div class="auth-container">
+                            <div class="auth-card">
+                                <div style="text-align: center; margin-bottom: 30px;">
+                                    <div style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 2rem; background: var(--gradient-ocean); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 10px;">TestNauti.co ⚓</div>
+                                </div>
+
+                                <h2>Welcome Back!</h2>
+                                <p>Sign in to continue your preparation</p>
+
+                                <form>
+                                    <div class="form-group">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-input" placeholder="your.email@example.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-input" placeholder="Enter your password">
+                                    </div>
+
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                        <label style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-gray); cursor: pointer;">
+                                            <input type="checkbox" style="width: 18px; height: 18px; accent-color: var(--vibrant-blue);">
+                                            Remember me
+                                        </label>
+                                        <a href="#" style="color: var(--vibrant-blue); font-size: 0.9rem; text-decoration: none; font-weight: 600;">Forgot password?</a>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-ocean" style="width: 100%;">Sign In</button>
+                                </form>
+
+                                <div class="divider">or</div>
+
+                                <button class="btn" style="width: 100%; background: white; border: 2px solid var(--sky-light); color: var(--text-dark); margin-bottom: 10px;">
+                                    <span style="margin-right: 10px;">🔵</span> Continue with Google
+                                </button>
+
+                                <p style="text-align: center; margin-top: 20px; color: var(--text-gray); font-size: 0.9rem;">
+                                    Don't have an account? <a href="#" style="color: var(--vibrant-blue); font-weight: 600; text-decoration: none;">Sign Up Free</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="device mobile">
+                    <div class="device-label">📱 MOBILE VIEW</div>
+                    <div class="device-screen">
+                        <div class="auth-container" style="padding: 30px 20px;">
+                            <div class="auth-card" style="padding: 35px 25px;">
+                                <div style="text-align: center; margin-bottom: 25px;">
+                                    <div style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.5rem; background: var(--gradient-ocean); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TestNauti.co ⚓</div>
+                                </div>
+
+                                <h2 style="font-size: 1.5rem;">Welcome Back!</h2>
+                                <p style="font-size: 0.9rem;">Sign in to continue</p>
+
+                                <form>
+                                    <div class="form-group">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-input" placeholder="your.email@example.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-input" placeholder="Password">
+                                    </div>
+
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; font-size: 0.85rem;">
+                                        <label style="display: flex; align-items: center; gap: 6px; color: var(--text-gray);">
+                                            <input type="checkbox" style="width: 16px; height: 16px;">
+                                            Remember
+                                        </label>
+                                        <a href="#" style="color: var(--vibrant-blue); text-decoration: none; font-weight: 600;">Forgot?</a>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-ocean" style="width: 100%;">Sign In</button>
+                                </form>
+
+                                <div class="divider" style="margin: 20px 0;">or</div>
+
+                                <button class="btn" style="width: 100%; background: white; border: 2px solid var(--sky-light); color: var(--text-dark); padding: 12px; font-size: 0.9rem;">
+                                    🔵 Google
+                                </button>
+
+                                <p style="text-align: center; margin-top: 15px; color: var(--text-gray); font-size: 0.85rem;">
+                                    No account? <a href="#" style="color: var(--vibrant-blue); font-weight: 600; text-decoration: none;">Sign Up</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Section -->
+        <div style="background: var(--gradient-ocean); padding: 60px 40px; border-radius: 20px; text-align: center; color: white; margin-top: 80px;">
+            <h2 style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 2.5rem; margin-bottom: 20px;">Complete Mockup Set Ready! 🎉</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 15px; opacity: 0.95;">All pages designed with updated brand guidelines</p>
+            <p style="font-size: 1rem; opacity: 0.9;">✅ No Blue-to-Coral Gradient • ✅ Ocean Wave & Sunset Gradients • ✅ Vibrant Marine Energy</p>
+            <p style="font-size: 1rem; opacity: 0.9; margin-top: 10px;">Desktop & Mobile Views • Consistent Brand Application • Bold & Flashy Design</p>
+        </div>
+    </div>
+</body>
+</html>

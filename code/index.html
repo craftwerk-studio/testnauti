@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestNauti.co - Brand Assets Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
+            padding: 40px 20px;
+            color: #1A1A1A;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #00D4FF 0%, #20E2D8 50%, #B2EBF2 100%);
+            border-radius: 30px;
+            margin-bottom: 60px;
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
+            color: white;
+        }
+
+        .header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 4rem;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            opacity: 0.95;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .card h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #002244;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .card h2::before {
+            content: '';
+            width: 6px;
+            height: 40px;
+            background: linear-gradient(135deg, #00D4FF 0%, #20E2D8 100%);
+            border-radius: 3px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: block;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 15px;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00D4FF 0%, #20E2D8 50%, #B2EBF2 100%);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FFB800 100%);
+            color: white;
+        }
+
+        .btn-dark {
+            background: linear-gradient(135deg, #002244 0%, #004488 100%);
+            color: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .info-box {
+            background: linear-gradient(to right, #E0F7FA, #f8f9fa);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #00D4FF;
+        }
+
+        .info-box h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #002244;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .info-box p {
+            color: #6B7280;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .feature-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #E0F7FA;
+            font-size: 1.05rem;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            color: #20E2D8;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #00D4FF 0%, #20E2D8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #20E2D8 0%, #00D4FF 100%);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .removed-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #FF6B6B;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            color: #6B7280;
+        }
+
+        .gradient-preview {
+            height: 100px;
+            border-radius: 15px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TestNauti.co ⚓</h1>
+            <p>Brand Assets & Documentation</p>
+        </div>
+
+        <!-- Main Resources -->
+        <div class="card">
+            <h2>📁 Main Resources</h2>
+            <p style="color: #6B7280; margin-bottom: 20px;">Access the complete brand documentation and design mockups</p>
+            
+            <div class="button-grid">
+                <a href="brand-style-guide.html" class="btn btn-primary">
+                    🎨 Brand Style Guide<br>
+                    <span style="font-size: 0.85rem; opacity: 0.9; font-weight: 400;">Complete brand documentation</span>
+                </a>
+                <a href="website-mockups.html" class="btn btn-secondary">
+                    🖥️ Website Mockups<br>
+                    <span style="font-size: 0.85rem; opacity: 0.9; font-weight: 400;">All 7 pages • Desktop & Mobile</span>
+                </a>
+                <a href="BRAND_UPDATE_SUMMARY.md" class="btn btn-dark">
+                    📋 Update Summary<br>
+                    <span style="font-size: 0.85rem; opacity: 0.9; font-weight: 400;">Detailed change log</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- What Changed -->
+        <div class="card">
+            <h2>🔄 What Changed</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
+                <div>
+                    <h3 style="color: #FF6B6B; font-family: 'Poppins', sans-serif; margin-bottom: 15px;">❌ Removed</h3>
+                    <div style="background: #FFF3E0; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B6B;">
+                        <strong style="color: #002244;">Vibrant Fusion Gradient</strong>
+                        <div class="gradient-preview" style="background: linear-gradient(135deg, #00D4FF 0%, #FF6B6B 100%); margin-top: 10px; text-decoration: line-through;">
+                            Blue → Coral
+                        </div>
+                        <p style="margin-top: 10px; color: #6B7280; font-size: 0.9rem;">
+                            Direct blue-to-coral transition removed to maintain ocean palette consistency
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="color: #20E2D8; font-family: 'Poppins', sans-serif; margin-bottom: 15px;">✅ Added</h3>
+                    <div style="background: #E0F7FA; padding: 20px; border-radius: 12px; border-left: 4px solid #20E2D8;">
+                        <strong style="color: #002244;">Crystal Clear Gradient</strong>
+                        <div class="gradient-preview" style="background: linear-gradient(135deg, #00D4FF 0%, #20E2D8 50%, #B2EBF2 100%);">
+                            Blue → Teal → Light Blue
+                        </div>
+                        <p style="margin-top: 10px; color: #6B7280; font-size: 0.9rem;">
+                            Stays within ocean palette • Energetic alternative to Ocean Wave
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Brand Elements -->
+        <div class="card">
+            <h2>🎨 Key Brand Elements</h2>
+            
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>Colors</h3>
+                    <p><strong>5 Primary:</strong> Vibrant Blue, Deep Navy, Accent Teal, Coral Accent, Sunny Orange</p>
+                    <p style="margin-top: 5px;"><strong>4 Supporting:</strong> White, Sky Light, Sky Medium, Sand Beige</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Typography</h3>
+                    <p><strong>Headings:</strong> Poppins Bold/ExtraBold</p>
+                    <p><strong>Secondary:</strong> Quicksand Bold</p>
+                    <p><strong>Body:</strong> Inter Regular</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Gradients</h3>
+                    <p><strong>6 Approved:</strong> Ocean Wave, Sunset Burst, Deep Ocean, Crystal Clear, Sky Fade, Ocean Depth</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Components</h3>
+                    <p>Buttons (rounded), Cards (20px radius), Inputs (12px radius), Icons (bold, gradient-filled)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pages Designed -->
+        <div class="card">
+            <h2>🖥️ Website Mockups Included</h2>
+            <p style="color: #6B7280; margin-bottom: 20px;">High-fidelity mockups for all key pages (Desktop 1440px + Mobile 375px)</p>
+            
+            <ul class="feature-list">
+                <li><strong>Landing/Home Page</strong> - Hero, features, CTAs, footer</li>
+                <li><strong>Exam Catalog</strong> - Grid of PER exam cards with stats</li>
+                <li><strong>Exam Detail/Start</strong> - Settings toggles, exam info, start CTA</li>
+                <li><strong>Test Interface</strong> - Timer, questions, progress tracking</li>
+                <li><strong>Dashboard</strong> - Stats, progress bars, recent attempts</li>
+                <li><strong>Sign Up Page</strong> - Registration form with social login</li>
+                <li><strong>Login Page</strong> - Authentication with remember me</li>
+            </ul>
+
+            <div class="status-badge">All pages use approved gradients only</div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="card" style="background: linear-gradient(135deg, #002244 0%, #004488 100%); color: white;">
+            <h2 style="color: white;">📊 Deliverables Summary</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 10px;">3</div>
+                    <div style="opacity: 0.9;">HTML Files</div>
+                </div>
+                <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 10px;">7</div>
+                    <div style="opacity: 0.9;">Page Mockups</div>
+                </div>
+                <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 10px;">14</div>
+                    <div style="opacity: 0.9;">Views (Desktop+Mobile)</div>
+                </div>
+                <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 3rem; font-weight: 800; margin-bottom: 10px;">6</div>
+                    <div style="opacity: 0.9;">Approved Gradients</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Files List -->
+        <div class="card">
+            <h2>📄 File Index</h2>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #00D4FF;">
+                        <th style="text-align: left; padding: 15px; font-family: 'Poppins', sans-serif;">File</th>
+                        <th style="text-align: left; padding: 15px; font-family: 'Poppins', sans-serif;">Description</th>
+                        <th style="text-align: left; padding: 15px; font-family: 'Poppins', sans-serif;">Link</th>
+                    </tr>
+                </thead>
+                <tbody style="font-family: 'Inter', sans-serif;">
+                    <tr style="border-bottom: 1px solid #E0F7FA;">
+                        <td style="padding: 15px;"><strong>index.html</strong></td>
+                        <td style="padding: 15px;">This overview page</td>
+                        <td style="padding: 15px;"><a href="index.html" style="color: #00D4FF; text-decoration: none; font-weight: 600;">View →</a></td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #E0F7FA;">
+                        <td style="padding: 15px;"><strong>brand-style-guide.html</strong></td>
+                        <td style="padding: 15px;">Complete interactive brand guide</td>
+                        <td style="padding: 15px;"><a href="brand-style-guide.html" style="color: #00D4FF; text-decoration: none; font-weight: 600;">View →</a></td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #E0F7FA;">
+                        <td style="padding: 15px;"><strong>website-mockups.html</strong></td>
+                        <td style="padding: 15px;">All page mockups (desktop + mobile)</td>
+                        <td style="padding: 15px;"><a href="website-mockups.html" style="color: #00D4FF; text-decoration: none; font-weight: 600;">View →</a></td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #E0F7FA;">
+                        <td style="padding: 15px;"><strong>BRAND_UPDATE_SUMMARY.md</strong></td>
+                        <td style="padding: 15px;">Detailed summary of all changes</td>
+                        <td style="padding: 15px;"><a href="BRAND_UPDATE_SUMMARY.md" style="color: #00D4FF; text-decoration: none; font-weight: 600;">View →</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px;"><strong>BRAND_QUICK_REFERENCE.md</strong></td>
+                        <td style="padding: 15px;">Quick reference card (colors, gradients, CSS)</td>
+                        <td style="padding: 15px;"><a href="BRAND_QUICK_REFERENCE.md" style="color: #00D4FF; text-decoration: none; font-weight: 600;">View →</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; margin-bottom: 10px; color: #002244;">
+                <strong>TestNauti.co</strong> - Navigate Your Success
+            </p>
+            <p style="font-size: 0.9rem;">
+                Bold • Vibrant • Marine-Inspired • Professional ⚓ 🌊
+            </p>
+            <p style="font-size: 0.85rem; margin-top: 20px;">
+                Updated Brand • December 2025 • No Blue-to-Coral Gradient
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+{
+  "categorias_competencia": {
+    "plataformas_tests_simulacros": [
+      {
+        "nombre": "Test del PER",
+        "url": "https://testdelper.es/",
+        "modelo_negocio": "Freemium",
+        "propuesta_valor": "26 exámenes gratuitos + cursos premium por suscripción",
+        "precio": {
+          "gratis": "26 exámenes completos",
+          "pnb": "29€/año",
+          "per_basic": "39€/año",
+          "per_pro": "49€/año (incluye cartas náuticas)",
+          "examenes_regionales": "19€ por 6 meses (Madrid, Cataluña, Murcia, etc.)"
+        },
+        "titulaciones": ["PNB", "PER"],
+        "fortalezas": [
+          "Tests completamente gratuitos (26 exámenes)",
+          "Precios muy competitivos en tier premium",
+          "Exámenes por CCAA específicas",
+          "Soporte de instructores incluido",
+          "Sistema de ranking y seguimiento de progreso"
+        ],
+        "debilidades": [
+          "No cubre PY ni CY",
+          "Plataforma básica (WordPress + Elementor)",
+          "Sin app móvil propia visible",
+          "Marca poco conocida"
+        ],
+        "monetizacion": "Suscripciones anuales para contenido premium y cursos completos",
+        "tecnologia": "WordPress con Elementor",
+        "trafico_estimado": "No disponible públicamente"
+      },
+      {
+        "nombre": "Aula Náutica",
+        "url": "https://aulanautica.org/",
+        "modelo_negocio": "Freemium (contenido gratuito + servicios premium)",
+        "propuesta_valor": "Cursos gratuitos completos + prácticas de pago",
+        "precio": {
+          "gratis": "Todos los cursos teóricos (PNB, PER, PY, CY)",
+          "practicas": "Variable (con 10% descuento código AULANAUTICA)",
+          "clases_privadas": "No especificado",
+          "examenes": "Gestión incluida"
+        },
+        "titulaciones": ["PNB", "PER", "PY", "CY"],
+        "fortalezas": [
+          "Contenido 100% gratuito de alta calidad",
+          "Respaldo institucional (Fundació Escola Port Barcelona)",
+          "Tests adaptados a exámenes catalanes",
+          "Clases streaming con instructores",
+          "Integración con escuela física (Puerto Olímpico Barcelona)"
+        ],
+        "debilidades": [
+          "Enfoque regional (Cataluña)",
+          "Tests específicos para exámenes catalanes",
+          "Requiere presencia física para prácticas (Barcelona)",
+          "Sin monetización directa de plataforma online"
+        ],
+        "monetizacion": "Prácticas en barco, clases privadas, gestoría de exámenes, certificados médicos",
+        "respaldo": "Escola Port - Puerto Olímpico Barcelona",
+        "trafico_estimado": "No disponible públicamente",
+        "enfoque_geografico": "Cataluña (Barcelona)"
+      },
+      {
+        "nombre": "Estudias o Navegas",
+        "url": "https://www.estudiasonavegas.com/tests-online",
+        "modelo_negocio": "Suscripción de pago",
+        "propuesta_valor": "Suscripción a tests online para todas las titulaciones",
+        "precio": {
+          "suscripcion_recreo": "No especificado (requiere registro)",
+          "suscripcion_pper": "Producto separado"
+        },
+        "titulaciones": ["PNB", "PER", "PY", "CY", "PPER"],
+        "fortalezas": [
+          "Cobertura completa de todas las titulaciones",
+          "Incluye PPER (Patrón Profesional)",
+          "Foros de usuarios integrados",
+          "Soporte telefónico extendido (670 310 310)",
+          "Marca establecida ('La web de los navegantes')"
+        ],
+        "debilidades": [
+          "Sin contenido gratuito visible",
+          "Requiere registro para ver precios",
+          "Poca transparencia en propuesta de valor",
+          "Sin información clara de número de tests"
+        ],
+        "monetizacion": "Suscripciones + publicidad banner + partnerships con escuelas",
+        "diferenciadores": "Enfoque en PPER (título profesional)",
+        "trafico_estimado": "No disponible públicamente"
+      },
+      {
+        "nombre": "Marinos.es",
+        "url": "https://marinos.es/el-mayor-simulador-de-examenes-de-per-y-patron-de-yate/",
+        "modelo_negocio": "Cursos online con simulador incluido",
+        "propuesta_valor": "El mayor simulador de exámenes PER y PY incluido en cursos",
+        "precio": {
+          "pnb": "49€",
+          "per": "69€",
+          "py": "79€"
+        },
+        "tests_disponibles": "200+ tests verificados por titulación",
+        "preguntas": "Miles de preguntas tipo test del temario oficial",
+        "titulaciones": ["PNB", "PER", "PY"],
+        "fortalezas": [
+          "Más de 10 años de experiencia",
+          "200+ tests por titulación (volumen alto)",
+          "Exámenes de múltiples CCAA",
+          "Corrección automática con feedback",
+          "Planes de estudio personalizados",
+          "Academia física en Andalucía (Cádiz, Sevilla, Huelva)"
+        ],
+        "debilidades": [
+          "Simulador solo accesible con compra de curso",
+          "No hay versión gratuita del simulador",
+          "Precios medios-altos vs competencia",
+          "No cubre CY"
+        ],
+        "monetizacion": "Venta de cursos completos (simulador como valor añadido)",
+        "servicios_adicionales": [
+          "Prácticas en Cádiz, Sevilla, Huelva",
+          "Gestoría náutica (compraventa embarcaciones)"
+        ],
+        "enfoque_geografico": "Andalucía",
+        "trafico_estimado": "No disponible públicamente"
+      }
+    ],
+    "apps_moviles": [
+      {
+        "nombre": "Test Patrón",
+        "plataformas": ["iOS (App Store)", "Android (Google Play)"],
+        "url_ios": "https://apps.apple.com/es/app/test-patr%C3%B3n/id1048203359",
+        "url_android": "https://play.google.com/store/apps/details?id=com.Marinus.TestPatron",
+        "modelo_negocio": "App de pago o freemium (no confirmado)",
+        "contenido": "8.000+ preguntas",
+        "titulaciones": ["PNB", "PER", "PER reducido", "PY", "CY"],
+        "fortalezas": [
+          "Movilidad total (preparación en cualquier lugar)",
+          "8.000+ preguntas (volumen muy alto)",
+          "Cobertura de todas las titulaciones principales",
+          "Modo examen con tiempo límite",
+          "Criterios de evaluación reales"
+        ],
+        "debilidades": [
+          "Datos de descargas/ratings no disponibles en búsqueda",
+          "Fragmentación (múltiples apps similares en stores)",
+          "Competencia directa con versiones web"
+        ],
+        "descargas_estimadas": "No disponible",
+        "valoracion": "No disponible"
+      },
+      {
+        "nombre": "PER Tests - Patrón de Recreo",
+        "plataformas": ["Android (Google Play)"],
+        "url": "https://play.google.com/store/apps/details?id=com.pruebatest.per",
+        "contenido": "10.000+ preguntas aprobadas por expertos",
+        "caracteristicas": [
+          "Simulacros con tiempo límite",
+          "Tests por temas",
+          "Corrección automática"
+        ],
+        "enfoque": "Especializada en PER (R.D. 875/2014)",
+        "fortalezas": [
+          "10.000+ preguntas (mayor volumen identificado)",
+          "Especialización en PER",
+          "Tests organizados por temas"
+        ],
+        "debilidades": [
+          "Solo Android",
+          "Solo cubre PER",
+          "Datos de popularidad no disponibles"
+        ]
+      },
+      {
+        "nombre": "TEST PER - Preguntas oficiales",
+        "plataformas": ["iOS (App Store)"],
+        "url": "https://apps.apple.com/mx/app/test-per-preguntas-oficiales/id1194078220",
+        "enfoque": "Preguntas oficiales PER",
+        "fortalezas": ["Foco en preguntas oficiales", "Plataforma iOS"],
+        "debilidades": ["Solo iOS", "Solo PER", "Información limitada"]
+      }
+    ],
+    "directorios_escuelas": [
+      {
+        "nombre": "InfoIsInfo",
+        "url": "https://www.infoisinfo.es/busqueda/escuela_nautica",
+        "tipo": "Directorio comercial general",
+        "modelo_negocio": "Publicidad + listings premium para negocios",
+        "propuesta_valor": "Más clientes, visibilidad y reconocimiento de marca",
+        "cobertura": "Nacional (España)",
+        "segmentos": [
+          "Escuelas náuticas",
+          "Tiendas de equipamiento náutico",
+          "Alquiler de embarcaciones",
+          "Deportes acuáticos"
+        ],
+        "fortalezas": [
+          "Cobertura nacional completa",
+          "SEO fuerte (rankings por ciudad)",
+          "Modelo probado en múltiples sectores",
+          "Incluye reviews y opiniones"
+        ],
+        "debilidades": [
+          "Directorio genérico (no especializado en náutica)",
+          "No ofrece servicios de valor añadido (solo listado)",
+          "Datos sin verificar oficialmente",
+          "Competencia con Google Maps/Google Business"
+        ],
+        "monetizacion": "Listings premium, publicidad display",
+        "competidor_directo_testnautico": false,
+        "complementario": true,
+        "nota": "Potencial partner para distribución de tráfico"
+      },
+      {
+        "nombre": "Central de Prácticas Náuticas",
+        "url": "https://www.centraldepracticasnauticas.com/",
+        "tipo": "Marketplace de prácticas náuticas",
+        "modelo_negocio": "Comisión por reservas de prácticas",
+        "propuesta_valor": "Conecta escuelas homologadas con estudiantes para prácticas obligatorias",
+        "gestion": "Avante Centro de Vela (Madrid y Valencia)",
+        "titulaciones": ["LN", "PNB", "PER", "PY", "CY"],
+        "fortalezas": [
+          "Soluciona pain point real (encontrar prácticas)",
+          "Solo escuelas homologadas",
+          "Proceso de verificación y contrato",
+          "Presencia física (Madrid, Valencia)"
+        ],
+        "debilidades": [
+          "Registro voluntario (no todas las escuelas)",
+          "No es directorio público completo",
+          "Enfoque solo en prácticas (no teoría/exámenes)",
+          "Depende de escuelas para llenar barcos"
+        ],
+        "monetizacion": "Comisión sobre reservas de prácticas",
+        "competidor_directo_testnautico": false,
+        "complementario": true,
+        "nota": "Modelo diferente (prácticas vs teoría), posible partner"
+      },
+      {
+        "nombre": "Sailwiz",
+        "url": "https://www.sailwiz.com/en/offer/escuelas-nauticas/b/132",
+        "tipo": "Directorio de servicios náuticos",
+        "modelo_negocio": "Agregador de escuelas y servicios náuticos",
+        "propuesta_valor": "Mayor selección de academias náuticas acreditadas en España",
+        "fortalezas": [
+          "Especializado en sector náutico",
+          "Cobertura nacional",
+          "Interfaz multilingüe"
+        ],
+        "debilidades": [
+          "Información limitada sobre modelo de verificación",
+          "Poca diferenciación vs InfoIsInfo",
+          "Sin servicios de valor añadido"
+        ],
+        "competidor_directo_testnautico": false,
+        "complementario": true
+      }
+    ],
+    "escuelas_online_completas": [
+      {
+        "nombre": "Cenáutica",
+        "url": "https://www.cenautica.com/",
+        "tipo": "Escuela náutica online + presencial",
+        "modelo_negocio": "Cursos online completos (teoría + prácticas + gestoría)",
+        "propuesta_valor": "Escuela náutica líder en España con formación integral",
+        "acreditaciones": [
+          "Dirección General de la Marina Mercante",
+          "Generalitat Valenciana",
+          "Junta de Andalucía",
+          "Royal Yachting Association"
+        ],
+        "experiencia": "Desde 2000 (25+ años)",
+        "servicios": [
+          "Cursos online completos",
+          "Exámenes resueltos",
+          "Prácticas presenciales",
+          "Gestoría náutica (matrículas exámenes)",
+          "Test Nautica App",
+          "Contenido multimedia propietario"
+        ],
+        "fortalezas": [
+          "Marca muy establecida (líder del sector)",
+          "Múltiples acreditaciones oficiales",
+          "Servicio integral (teoría + prácticas + gestoría)",
+          "25+ años de experiencia",
+          "Contenido multimedia de alta calidad",
+          "Presencia nacional"
+        ],
+        "debilidades": [
+          "Modelo tradicional (escuela completa, no solo tests)",
+          "Precios altos (cursos completos)",
+          "No enfocado específicamente en simulacros gratuitos",
+          "Compite directamente con escuelas físicas"
+        ],
+        "precio_estimado": "Cursos completos (rango similar a escuelas tradicionales: 300-800€ según título)",
+        "competidor_directo_testnautico": "Parcial (ofrecen tests pero dentro de cursos completos)",
+        "gap_identificado": "No ofrecen simulacros gratuitos standalone como lead magnet"
+      },
+      {
+        "nombre": "Bolsa de Navegantes",
+        "url": "https://www.bolsadenavegantes.net/",
+        "tipo": "Portal náutico integral",
+        "modelo_negocio": "Contenido + cursos + marketplace embarcaciones",
+        "servicios": [
+          "Cursos de navegación",
+          "Tests PER con respuestas razonadas",
+          "Compraventa de embarcaciones",
+          "Asesoramiento náutico"
+        ],
+        "fortalezas": [
+          "Modelo diversificado (formación + marketplace)",
+          "Tests con respuestas razonadas (valor añadido)",
+          "Comunidad náutica activa"
+        ],
+        "debilidades": [
+          "Enfoque disperso (no especializado en formación)",
+          "Competencia con marketplaces establecidos",
+          "Modelo poco claro"
+        ],
+        "competidor_directo_testnautico": "Bajo (enfoque diferente)"
+      }
+    ]
+  },
+  "resumen_competencia": {
+    "total_competidores_identificados": 13,
+    "categorias": {
+      "plataformas_tests": 4,
+      "apps_moviles": 3,
+      "directorios": 3,
+      "escuelas_online": 2,
+      "otros": 1
+    },
+    "gaps_identificados": [
+      "No existe un agregador puro de escuelas náuticas con verificación oficial",
+      "Las plataformas de tests son freemium o de pago, ninguna es 100% gratuita sin límites",
+      "Los simulacros gratuitos existentes tienen limitaciones (26 exámenes, regional, etc.)",
+      "No hay integración entre directorio de escuelas + simulacros + lead generation",
+      "Apps móviles fragmentadas, sin líder claro dominante",
+      "Directorios genéricos (InfoIsInfo) sin especialización náutica real",
+      "Escuelas online completas (Cenautica) no compiten en modelo freemium de simulacros"
+    ],
+    "oportunidades_testnautico": [
+      "Simulacros 100% gratuitos ilimitados como diferenciador radical",
+      "Directorio verificado de escuelas + simulacros en plataforma única",
+      "Modelo de suscripción B2B (escuelas pagan por destacarse) vs B2C tradicional",
+      "Focus en PER (69% del mercado) inicialmente, expandir después",
+      "SEO fuerte en long-tail (test PER gratis, simulacro PER 2026, etc.)",
+      "Integración con APIs oficiales DGMM si disponibles"
+    ]
+  }
+}

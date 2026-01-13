@@ -1,0 +1,330 @@
+{
+  "id": "2025-per-exam69",
+  "title": "PER Exam N° 69 - Complete Exam",
+  "subject": "Nautical Certification (PER)",
+  "year": 2025,
+  "durationMinutes": 60,
+  "totalQuestions": 29,
+  "description": "Official PER (Patrón de Embarcaciones de Recreo) exam covering: Nomenclatura Náutica, Seguridad, Normativa IALA/AISM, Emergencias en la mar, Meteorología, Teoría de navegación, Carta de navegación.",
+  "questions": [
+    {
+      "number": 1,
+      "text": "La embarcación formada por dos cascos se denomina:",
+      "options": {
+        "a": "Trimarán",
+        "b": "Policasco",
+        "c": "Monocasco",
+        "d": "Catamarán"
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "number": 2,
+      "text": "La obra muerta de un buque es:",
+      "options": {
+        "a": "La parte sumergida del casco",
+        "b": "Ninguna respuesta es cierta",
+        "c": "La parte del casco por encima de la linea de flotación.",
+        "d": "La parte del casco pintada con colores muy vivos."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 3,
+      "text": "La pieza de refuerzo longitudinal inferior del barco que va de proa a popa construida de metal, madera o poliéster reforzado de fibra de vidrio se denomina:",
+      "options": {
+        "a": "Quilla",
+        "b": "Codaste",
+        "c": "Regala",
+        "d": "Bao"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 4,
+      "text": "Llevar el ancla a la pendura, significa:",
+      "options": {
+        "a": "Cuando la caña del ancla está totalmente trincada en el escobén.",
+        "b": "Cuando la linea de fondeo o cadena está en posición vertical y toca el fondo con la cadena tensa.",
+        "c": "Cuando el ancla cuelga fuera del escobén o por encima de la borda lista para fondear.",
+        "d": "Ninguna respuesta es correcta."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 5,
+      "text": "La definición correcta de la expresión \"Capear el temporal\" es:",
+      "options": {
+        "a": "Poner la aleta a la mar y poca velocidad.",
+        "b": "poner la amura a la mar y poca velocidad.",
+        "c": "Ponerse de costado a la mar con máxima velocidad para alejarse.",
+        "d": "Poner la amura a la mar y con mucha velocidad."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 6,
+      "text": "La señal fumígena flotante es:",
+      "options": {
+        "a": "De color naranja y tiene una duración mínima de 3 minutos.",
+        "b": "De color rojo y tiene una duración mínima de 1 minuto.",
+        "c": "De color rojo y tiene una duración mínima de 3 minutos.",
+        "d": "De color naranja y tiene una duración mínima de 6 minutos."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 7,
+      "text": "¿Cómo se denomina el movimiento longitudinal de la embarcación de elevación y descenso de la proa debido a la acción de la mar?",
+      "options": {
+        "a": "Escora.",
+        "b": "Balance.",
+        "c": "Cabeceo.",
+        "d": "Oscilación."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 8,
+      "text": "Para establecer una comunicación con Salvamento Marítimo se puede contactar:",
+      "options": {
+        "a": "Todas son correctas.",
+        "b": "Haciendo uso del número de emergencias 112.",
+        "c": "Emitiendo un mensaje por el canal 16 de VHF.",
+        "d": "Con una llamada telefónica al 900 202 202."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 9,
+      "text": "Viniendo de la mar y entrando en puerto, ¿Por qué costado debemos dejar una marca lateral de color verde?",
+      "options": {
+        "a": "Siempre por barlovento.",
+        "b": "Por babor.",
+        "c": "Por estribor.",
+        "d": "Siempre por sotavento."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 10,
+      "text": "Las balizas o marcas especiales tienen de forma típica como marca de tope:",
+      "options": {
+        "a": "Una marca de peligro aislado.",
+        "b": "Dos esferas negras superpuestas.",
+        "c": "Una esfera roja.",
+        "d": "Un aspa amarilla."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 11,
+      "text": "¿Qué forma tiene la marca de tope de la boya de peligro aislado?",
+      "options": {
+        "a": "De castillete.",
+        "b": "Esférica.",
+        "c": "Cilíndrica.",
+        "d": "Cónica."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 12,
+      "text": "Si navegando de noche por el Mediterraneo cerca de la costa vemos una luz que emite un grupo de dos destellos blancos, se tratará de una:",
+      "options": {
+        "a": "Marca de peligro aislado.",
+        "b": "Ninguna respuesta de las anteriores es cierta.",
+        "c": "Marca lateral de estribor.",
+        "d": "Marca de aguas navegables."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 13,
+      "text": "¿Cómo son las franjas de colores en una marca de aguas navegables?",
+      "options": {
+        "a": "En diagonal rojas y verdes.",
+        "b": "Verticales rojas y negras.",
+        "c": "Horizontales negras y amarillas.",
+        "d": "Verticales rojas y blancas."
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "number": 14,
+      "text": "El procedimiento de extinción de un incendio por sofocación consiste en :",
+      "options": {
+        "a": "Evítar que entren en contacto el combustible y el oxlgeno del aíre.",
+        "b": "La rotura de la reaccíón en cadena.",
+        "c": "Bajar de temperatura el fuego.",
+        "d": "Eliminar el combustíble."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 15,
+      "text": "Los incendios producidos por material sólido que suelen dejar brasas corresponden a los fuegos de clase:",
+      "options": {
+        "a": "B",
+        "b": "A",
+        "c": "E",
+        "d": "C"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 16,
+      "text": "La clasificación UNE de los incendios define la clase F como:",
+      "options": {
+        "a": "Fuegos que tienen por combustibles aceites y grasas que provienen de vegetales y animales.",
+        "b": "Fuegos de combustibles líquidos.",
+        "c": "Fuegos de combustibles gaseosos.",
+        "d": "Fuegos de combustibles solidos."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 17,
+      "text": "Si no encontramos en el hemisferio norte, el sentido de giro del viento en una borrasca será:",
+      "options": {
+        "a": "De dentro hacia afuera en sentido horario.",
+        "b": "de fuera hacia adentro en sentido antihorario.",
+        "c": "de dentro hacia afuera en sentido antihorario.",
+        "d": "De fuera hacia adentro en sentido horario."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 18,
+      "text": "A la superficie marina sobre la que el viento sopla sensiblemente en la misma dirección se la denomina:",
+      "options": {
+        "a": "Virazón.",
+        "b": "Fetch.",
+        "c": "Superficie frontal.",
+        "d": "Persistencia."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 19,
+      "text": "La brisa costera conocida como terral:",
+      "options": {
+        "a": "Sopla solo por la noche de la mar a la tierra.",
+        "b": "Sopla de día y de la mar a la tierra.",
+        "c": "Sopla de noche de la tierra al mar.",
+        "d": "Sopla de día de la tierra al mar."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 20,
+      "text": "Por presión atmosférica se entiende:",
+      "options": {
+        "a": "El peso ejercido por la columna de aire sobre la superficie de la tierra.",
+        "b": "La presión ejercida de todo el aire que rodea la tierra sobre la superficie del mar.",
+        "c": "El volumen de aire que envuelve a la tierra.",
+        "d": "La presión producida por la intersección entre la masa de aire y la superficie de la tierra."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 21,
+      "text": "El arco del meridiano del lugar contado desde el ecuador hasta el paralelo del observador se denomina:",
+      "options": {
+        "a": "Meridiano.",
+        "b": "Latitud.",
+        "c": "Ecuador.",
+        "d": "Longitud."
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "number": 22,
+      "text": "El rumbo cuadrantal S 45 E equivale en rumbo circular a:",
+      "options": {
+        "a": "135°",
+        "b": "315°",
+        "c": "225°",
+        "d": "045°"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "number": 23,
+      "text": "La longitud de arco de un minuto medido en el Ecuador equivale en distancia a:",
+      "options": {
+        "a": "La milla.",
+        "b": "El nudo.",
+        "c": "La braza.",
+        "d": "El pie."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 24,
+      "text": "En las mareas entendemos por duración de la creciente:",
+      "options": {
+        "a": "La diferencia de sonda entre la bajamar y la pleamar.",
+        "b": "El intervalo en tiempo que media entre la pleamar y la bajamar.",
+        "c": "La diferencia de sonda entre la sonda carta y la sonda pleamar.",
+        "d": "El intervalo en tiempo que media entre la bajamar y la pleamar que le sigue."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 25,
+      "text": "El ángulo que forma el Norte de aguja con el Norte verdadero, se denomina:",
+      "options": {
+        "a": "Demora.",
+        "b": "Declinación magnética.",
+        "c": "Corrección total.",
+        "d": "Desvío."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "number": 26,
+      "text": "AÑO 2025.Desde la situación del punto A que está a 5 millas del Faro de Punta Alcázar y 4 millas del Faro de Punta Cires, damos rumbo para pasar a 8 millas del Faro de Cabo de Trafalgar. Teniendo en cuanta una velocidad del buque de 12 nudos, dm 1 ° y un desvío a dicho rumbo de -1 °. ¿Cuál será el Ra para pasar a 8 millas de Trafalgar y la situación del punto A?",
+      "options": {
+        "a": "I 36° 04,3' N y L 005° 55, 8' W Rv 106°",
+        "b": "I 35° 56,0' N y L 005° 33,4' W Rv 286°",
+        "c": "I 35° 44,5' N y L 005° 57,5' W Rv 245°",
+        "d": "I 35° 45,9' N y L 006° 01, 9' W Rv 286°"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 27,
+      "text": "AÑO 2025.Encontrándonos en la oposición del Faro de Punta Carnero con el Faro de Punta Cires y a una distancia de 4 millas de este último, ponemos rumbo a pasar a 5 millas del Faro de Punta Europa, y en el momento de cortar la oposición del Faro de Punta Europa con el Faro de Punta Almina obtenemos de este último una Da de 160°. ¿Cuál será el Ra que llevamos?",
+      "options": {
+        "a": "Ra 055°",
+        "b": "Ra 060°",
+        "c": "Ra 067°",
+        "d": "Ra 072°"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 28,
+      "text": "AÑO 2025.Siendo HRB 2110, salimos del Puerto de Ceuta luz Verde a un Rv 020°, con una vb de 9 nudos. ¿Cuál será la situación una hora y media más tarde?",
+      "options": {
+        "a": "I 36° 01,2' N y L 006° 02,3' W",
+        "b": "I 35° 56,2' N y L 005° 21,3' W",
+        "c": "I 36° 10,2' N y L 005° 12, 8' W",
+        "d": "I 36° 06,6' N y L 005° 13,0' W"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "number": 29,
+      "text": "AÑO 2025.¿Cuál será la sonda que tendremos debajo de la quilla en el momento de la 1 ª pleamar del día 2 de noviembre de 2025 en el Puerto de Cádiz teniendo un calado de 1,1 metros y Sc 2 metros?",
+      "options": {
+        "a": "4,09 m",
+        "b": "6,29 m",
+        "c": "3,20 m",
+        "d": "2,30 m"
+      },
+      "correctAnswer": "d"
+    }
+  ]
+}

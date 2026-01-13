@@ -1,0 +1,1830 @@
+
+> code@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Volumes/Chus Hard Drive/Chus/⛵️ TestNauti.co/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Volumes/Chus Hard Drive/Chus/⛵️ TestNauti.co/code/package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local, .env
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 1663.7ms
+  Running TypeScript ...
+  Collecting page data using 9 workers ...
+🔄 Fetching schools from Notion...
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "Escuela Náutica Virazon Charter" (escuela-nautica-virazon-charter-101) is missing city - using empty string
+⚠️  School "Escuela Taboga" (escuela-taboga-107) is missing city - using empty string
+⚠️  School "Escuela Técnica Superior de Náutica" (escuela-tecnica-superior-de-nautica-119) is missing city - using empty string
+⚠️  School "Escuela Técnica Superior de Náutica y Máquinas - UDC" (escuela-tecnica-superior-de-nautica-y-maquinas-udc-111) is missing city - using empty string
+⚠️  School "ESPAI NAUTIC" (espai-nautic-39) is missing city - using empty string
+⚠️  School "Formación Náutica Online" (formacion-nautica-online-67) is missing city - using empty string
+⚠️  School "ICA Escuela Náutica - Cursos Marítimos Profesionales" (ica-escuela-nautica-cursos-maritimos-profesionales-112) is missing city - using empty string
+⚠️  School "Lamarencalma" (lamarencalma-84) is missing city - using empty string
+⚠️  School "Mar de bien" (mar-de-bien-85) is missing city - using empty string
+⚠️  School "Medcharter Academy" (medcharter-academy-142) is missing city - using empty string
+⚠️  School "Milla 11. Academia náutica, alquiler de barcos" (milla-11-academia-nautica-alquiler-de-barcos-47) is missing city - using empty string
+⚠️  School "Nautic Luis - Mallorca" (nautic-luis-mallorca-68) is missing city - using empty string
+⚠️  School "NAUTICAE, Escuela Náutica" (nauticae-escuela-nautica-100) is missing city - using empty string
+⚠️  School "Nautika eta Itsasontzi Makineria (Bilboko Ingeniaritza Eskola), Portugalete UPV/EHU" (nautika-eta-itsasontzi-makineria-bilboko-ingeniaritza-eskola-portugalete-upv-ehu-86) is missing city - using empty string
+⚠️  School "Nautimar Centro de Enseñanzas Nauticas" (nautimar-centro-de-ensenanzas-nauticas-8) is missing city - using empty string
+⚠️  School "Nautivel Centro de Estudios Nauticos SL" (nautivel-centro-de-estudios-nauticos-sl-2) is missing city - using empty string
+⚠️  School "Ociovela" (ociovela-50) is missing city - using empty string
+⚠️  School "Over Limit Náutica" (over-limit-nautica-144) is missing city - using empty string
+⚠️  School "Polaris by Sail and Fun Formación" (polaris-by-sail-and-fun-formacion-65) is missing city - using empty string
+⚠️  School "Polaris Nautika Eskola" (polaris-nautika-eskola-83) is missing city - using empty string
+⚠️  School "Sailing Mike - Academia Náutica" (sailing-mike-academia-nautica-140) is missing city - using empty string
+⚠️  School "Una.one Academia Náutica" (una-one-academia-nautica-64) is missing city - using empty string
+⚠️  School "Vela Mayorca - Escuela Nautica" (vela-mayorca-escuela-nautica-76) is missing city - using empty string
+⚠️  School "VLCNÁUTICA" (vlcnautica-40) is missing city - using empty string
+⚠️  School "Yacht Point Escuela Náutica" (yacht-point-escuela-nautica-25) is missing city - using empty string
+⚠️  School "Yatescuela" (yatescuela-127) is missing city - using empty string
+✅ Fetched 144 schools from Notion
+  Generating static pages using 9 workers (0/158) ...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+🔄 Fetching schools from Notion...
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+⚠️  School "32 Pies & Yachtingworks; Escuela Náutica y charter." (32-pies-yachtingworks-escuela-nautica-y-charter-93) is missing city - using empty string
+⚠️  School "A Son de Mar Escuela Náutica" (a-son-de-mar-escuela-nautica-6) is missing city - using empty string
+⚠️  School "A TODA VELA" (a-toda-vela-103) is missing city - using empty string
+⚠️  School "Academia Náutica Araña" (academia-nautica-arana-82) is missing city - using empty string
+⚠️  School "Academia náutica ARCOS" (academia-nautica-arcos-79) is missing city - using empty string
+⚠️  School "Academia Náutica Blanco" (academia-nautica-blanco-80) is missing city - using empty string
+⚠️  School "Academia náutica LA NAO" (academia-nautica-la-nao-53) is missing city - using empty string
+⚠️  School "Academia Nautica Mallorca" (academia-nautica-mallorca-73) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Charter y prácticas de navegación" (academia-nautica-oceano-charter-y-practicas-de-navegacion-46) is missing city - using empty string
+⚠️  School "Academia Náutica Océano - Cursos, Prácticas, Vela, Radio, Chárter" (academia-nautica-oceano-cursos-practicas-vela-radio-charter-45) is missing city - using empty string
+⚠️  School "Academia Náutica RCC" (academia-nautica-rcc-60) is missing city - using empty string
+⚠️  School "Acadèmia Nàutica Terramar" (academia-nautica-terramar-123) is missing city - using empty string
+⚠️  School "Academia Náutica The Alondra Academy" (academia-nautica-the-alondra-academy-81) is missing city - using empty string
+⚠️  School "Academia Nautix - Cursos Naúticos y Alquiler de Embarcaciones" (academia-nautix-cursos-nauticos-y-alquiler-de-embarcaciones-44) is missing city - using empty string
+⚠️  School "Actividades Náuticas Dacar - Escuela de Vela La Manga" (actividades-nauticas-dacar-escuela-de-vela-la-manga-133) is missing city - using empty string
+⚠️  School "Andaluza de Barcos; Escuela y servicios náuticos" (andaluza-de-barcos-escuela-y-servicios-nauticos-90) is missing city - using empty string
+⚠️  School "Antigua Escuela Superior de la Marina Mercante" (antigua-escuela-superior-de-la-marina-mercante-109) is missing city - using empty string
+⚠️  School "Atar Cabos | Escuela Náutica" (atar-cabos-escuela-nautica-35) is missing city - using empty string
+⚠️  School "Centro Andaluz del Navegante" (centro-andaluz-del-navegante-91) is missing city - using empty string
+⚠️  School "Club de Patrones de Cenáutica" (club-de-patrones-de-cenautica-13) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-134) is missing city - using empty string
+⚠️  School "Colomer Escuela Náutica" (colomer-escuela-nautica-130) is missing city - using empty string
+⚠️  School "Dxt Náutico" (dxt-nautico-128) is missing city - using empty string
+⚠️  School "eMAR Escuela Náutica" (emar-escuela-nautica-137) is missing city - using empty string
+⚠️  School "Escuela Balear Náutica" (escuela-balear-nautica-70) is missing city - using empty string
+⚠️  School "Escuela de Formación Marítima Profesional. Nautica.pro" (escuela-de-formacion-maritima-profesional-nautica-pro-77) is missing city - using empty string
+⚠️  School "Escuela de Mar Asturias" (escuela-de-mar-asturias-114) is missing city - using empty string
+⚠️  School "Escuela De Naútica" (escuela-de-nautica-110) is missing city - using empty string
+⚠️  School "Escuela de Navegación Buenaventura" (escuela-de-navegacion-buenaventura-129) is missing city - using empty string
+⚠️  School "Escuela de Navegación Principado de Asturias" (escuela-de-navegacion-principado-de-asturias-115) is missing city - using empty string
+⚠️  School "Escuela de Navegación RCNB" (escuela-de-navegacion-rcnb-21) is missing city - using empty string
+⚠️  School "Escuela de vela El Palo" (escuela-de-vela-el-palo-66) is missing city - using empty string
+⚠️  School "Escuela Deportes Náuticos" (escuela-deportes-nauticos-52) is missing city - using empty string
+⚠️  School "Escuela Nautic Ocean" (escuela-nautic-ocean-20) is missing city - using empty string
+⚠️  School "Escuela Náutica - Marinero a Bordo" (escuela-nautica-marinero-a-bordo-59) is missing city - using empty string
+⚠️  School "Escuela Náutica | Greenwich Náutica" (escuela-nautica-greenwich-nautica-7) is missing city - using empty string
+⚠️  School "Escuela Náutica Alfa" (escuela-nautica-alfa-32) is missing city - using empty string
+⚠️  School "Escuela Náutica Alisios" (escuela-nautica-alisios-38) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA ALTAIR & SAILING TRIPS BCN" (escuela-nautica-altair-sailing-trips-bcn-23) is missing city - using empty string
+⚠️  School "Escuela Náutica Altamar" (escuela-nautica-altamar-9) is missing city - using empty string
+⚠️  School "Escuela Náutica Altea - Acronáutica" (escuela-nautica-altea-acronautica-49) is missing city - using empty string
+⚠️  School "Escuela Náutica Anclas" (escuela-nautica-anclas-99) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-141) is missing city - using empty string
+⚠️  School "Escuela Náutica Andaluza" (escuela-nautica-andaluza-136) is missing city - using empty string
+⚠️  School "Escuela Náutica Azimut" (escuela-nautica-azimut-116) is missing city - using empty string
+⚠️  School "Escuela Náutica Baleares - Valnáutica S.L." (escuela-nautica-baleares-valnautica-s-l-29) is missing city - using empty string
+⚠️  School "Escuela Náutica Ballestrinque" (escuela-nautica-ballestrinque-42) is missing city - using empty string
+⚠️  School "Escuela Nautica Baluma" (escuela-nautica-baluma-14) is missing city - using empty string
+⚠️  School "Escuela Nàutica BonaProa" (escuela-nautica-bonaproa-22) is missing city - using empty string
+⚠️  School "Escuela Náutica Círculo Náutico del Mediterráneo - CINAMED" (escuela-nautica-circulo-nautico-del-mediterraneo-cinamed-97) is missing city - using empty string
+⚠️  School "Escuela Náutica de Catalunya - Cursos de náutica online" (escuela-nautica-de-catalunya-cursos-de-nautica-online-24) is missing city - using empty string
+⚠️  School "Escuela Náutica Dragut Online - Cursos Online PER, PNB, PY." (escuela-nautica-dragut-online-cursos-online-per-pnb-py-30) is missing city - using empty string
+⚠️  School "Escuela Náutica Easy Sailing" (escuela-nautica-easy-sailing-48) is missing city - using empty string
+⚠️  School "Escuela Náutica El Faro" (escuela-nautica-el-faro-92) is missing city - using empty string
+⚠️  School "Escuela Náutica El Marino" (escuela-nautica-el-marino-95) is missing city - using empty string
+⚠️  School "Escuela Náutica Esfera Celeste" (escuela-nautica-esfera-celeste-143) is missing city - using empty string
+⚠️  School "Escuela náutica homologada" (escuela-nautica-homologada-104) is missing city - using empty string
+⚠️  School "Escuela Náutica Juan Carlos I" (escuela-nautica-juan-carlos-i-98) is missing city - using empty string
+⚠️  School "Escuela Náutica Luis Moreno" (escuela-nautica-luis-moreno-12) is missing city - using empty string
+⚠️  School "ESCUELA NÁUTICA MARE NOSTRUM" (escuela-nautica-mare-nostrum-41) is missing city - using empty string
+⚠️  School "Escuela Náutica Municipal Cortadura" (escuela-nautica-municipal-cortadura-105) is missing city - using empty string
+⚠️  School "Escuela Náutica Nostromo" (escuela-nautica-nostromo-75) is missing city - using empty string
+⚠️  School "Escuela Náutica Ohana" (escuela-nautica-ohana-139) is missing city - using empty string
+⚠️  School "Escuela Náutica Orión" (escuela-nautica-orion-37) is missing city - using empty string
+⚠️  School "Escuela Náutica Probanza" (escuela-nautica-probanza-120) is missing city - using empty string
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+Error occurred prerendering page "/escuelas/fp-nautica-88". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Could not load schools data from Notion
+    at h (.next/server/chunks/ssr/code_c961bf4d._.js:1:68862)
+    at async Module.i (.next/server/chunks/ssr/code_41d99792._.js:3:1272) {
+  digest: '95941174'
+}
+Export encountered an error on /escuelas/[schoolId]/page: /escuelas/fp-nautica-88, exiting the build.
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+❌ Failed to fetch schools from Notion: Error [FetchError]: request to https://api.notion.com/v1/databases/2dc1dd90bfd6818b9a53ff9c88490ebb/query failed, reason: 
+    at ClientRequest.<anonymous> (.next/server/chunks/ssr/code_c961bf4d._.js:1:52119) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: m]
+}
+⨯ Next.js build worker exited with code: 1 and signal: null

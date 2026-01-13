@@ -1,0 +1,52 @@
+# Copy this to a new file named .env (in the project root)
+# Then replace the placeholder values with your actual keys
+
+# ===========================================
+# Clerk Authentication
+# ===========================================
+# Get these from: https://dashboard.clerk.com
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here
+CLERK_SECRET_KEY=sk_test_your_key_here
+
+# ===========================================
+# Local PostgreSQL Database
+# ===========================================
+# Choose ONE of the options below based on your PostgreSQL setup
+
+# Option 1: Default Homebrew install (no password needed)
+DATABASE_URL="postgresql://postgres@localhost:5432/testnauti"
+DIRECT_URL="postgresql://postgres@localhost:5432/testnauti"
+
+# Option 2: With password
+# DATABASE_URL="postgresql://postgres:your_password@localhost:5432/testnauti"
+# DIRECT_URL="postgresql://postgres:your_password@localhost:5432/testnauti"
+
+# Option 3: Docker setup
+# DATABASE_URL="postgresql://postgres:password@localhost:5432/testnauti"
+# DIRECT_URL="postgresql://postgres:password@localhost:5432/testnauti"
+
+# ===========================================
+# Zapier Webhook (School Update Requests)
+# ===========================================
+# Webhook URL for school update/claim ownership form submissions
+# This integrates with Notion CRM and email notifications
+# Get this from your Zapier webhook trigger
+NEXT_PUBLIC_ZAPIER_WEBHOOK_URL=https://hooks.zapier.com/hooks/catch/your_webhook_id_here
+
+# ===========================================
+# Calendly (Call Booking)
+# ===========================================
+# Calendly scheduling URL for school owners to book calls with your team
+# Get this from your Calendly account (Event Type URL)
+# Example: https://calendly.com/your-username/15min
+NEXT_PUBLIC_CALENDLY_URL=https://calendly.com/your-link
+
+# ===========================================
+# Notes
+# ===========================================
+# - For local development, DATABASE_URL and DIRECT_URL can be the same
+# - Make sure PostgreSQL is running before starting the dev server
+# - Database name 'testnauti' should exist (create it first if needed)
+# - Port 5432 is the default PostgreSQL port
+# - This file (.env) should NOT be committed to git (it's in .gitignore)
+
