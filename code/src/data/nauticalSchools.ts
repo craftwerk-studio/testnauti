@@ -1,5 +1,6 @@
 import { NauticalSchool } from '@/types/exam';
 import { fetchSchoolsFromNotion } from '@/lib/notion/fetchSchools';
+import { nauticalSchools as backupSchools } from './nauticalSchools.backup';
 import fs from 'fs';
 import path from 'path';
 
@@ -14,6 +15,7 @@ const CACHE_MAX_AGE = 5 * 60 * 1000; // 5 minutes
  * Get all nautical schools from Notion
  * Uses file-based cache to share data across Next.js build workers
  * This prevents rate limiting during parallel static page generation
+ * Falls back to backup data if Notion is unavailable
  */
 export async function getNauticalSchools(): Promise<NauticalSchool[]> {
   // Return in-memory cached data if available
@@ -39,10 +41,10 @@ export async function getNauticalSchools(): Promise<NauticalSchool[]> {
     }
   } catch (error) {
     // Cache read failed, continue to fetch from Notion
-    console.log('⚠️  Cache read failed, fetching from Notion');
+    console.log('⚠️  Cache read failed, will try Notion or backup');
   }
 
-  // Fetch from Notion
+  // Try to fetch from Notion
   try {
     cachedSchools = await fetchSchoolsFromNotion();
 
@@ -56,8 +58,13 @@ export async function getNauticalSchools(): Promise<NauticalSchool[]> {
 
     return cachedSchools;
   } catch (error) {
-    console.error('❌ Failed to fetch schools from Notion:', error);
-    throw new Error('Could not load schools data from Notion');
+    console.warn('⚠️  Failed to fetch schools from Notion, using backup data:', error);
+    
+    // Fall back to backup data
+    cachedSchools = backupSchools;
+    console.log(`📋 Using backup schools data (${backupSchools.length} schools)`);
+    
+    return cachedSchools;
   }
 }
 

@@ -45,6 +45,12 @@ function sleep(ms: number): Promise<void> {
  * Fetch all active schools from Notion database with retry logic
  */
 export async function fetchSchoolsFromNotion(): Promise<NauticalSchool[]> {
+  // Check if Notion client is available
+  if (!notion) {
+    console.warn('⚠️  Notion client not available (missing credentials)');
+    throw new Error('Notion client not initialized');
+  }
+
   const schools: NauticalSchool[] = [];
   let hasMore = true;
   let startCursor: string | undefined = undefined;
