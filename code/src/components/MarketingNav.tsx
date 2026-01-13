@@ -17,28 +17,36 @@ export default function MarketingNav() {
               >
                 Escuelas
               </Link>
-              <Link
-                href="/test"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-              >
-                Tests
-              </Link>
+              {/* Hidden for launch - will be re-enabled later */}
+              {false && (
+                <Link
+                  href="/test"
+                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                >
+                  Tests
+                </Link>
+              )}
             </div>
           </div>
           <div className="flex items-center space-x-4">
             <SignedOut>
-              <Link
-                href="/sign-in"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-              >
-                Iniciar sesión
-              </Link>
-              <Link
-                href="/sign-up"
-                className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium"
-              >
-                Comenzar
-              </Link>
+              {/* Hidden for launch - will be re-enabled later */}
+              {false && (
+                <>
+                  <Link
+                    href="/sign-in"
+                    className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                  >
+                    Iniciar sesión
+                  </Link>
+                  <Link
+                    href="/sign-up"
+                    className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium"
+                  >
+                    Comenzar
+                  </Link>
+                </>
+              )}
             </SignedOut>
             <SignedIn>
               <Link

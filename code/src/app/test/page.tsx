@@ -2,21 +2,32 @@
 
 import Link from 'next/link';
 import MarketingNav from '@/components/MarketingNav';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { pastExams } from '@/data/pastExams';
 
 type SortOption = 'date' | 'community';
 
 export default function TestPage() {
-  const [sortBy, setSortBy] = useState<SortOption>('date');
+  const router = useRouter();
 
-  // Ordenar exámenes según la opción seleccionada
+  // Redirect to home page - hidden for launch
+  useEffect(() => {
+    router.push('/');
+  }, [router]);
+
+  // Hidden for launch - redirecting to home
+  return null;
+
+  // Original content - hidden for launch, will be re-enabled later
+  /* eslint-disable */
+  /* 
+  const [sortBy, setSortBy] = useState<SortOption>('date');
+  
   const sortedExams = [...pastExams].sort((a, b) => {
     if (sortBy === 'date') {
-      // Ordenar por fecha (más reciente primero)
       return b.dateSort.localeCompare(a.dateSort);
     } else {
-      // Ordenar por comunidad autónoma (alfabéticamente)
       return a.community.localeCompare(b.community);
     }
   });
@@ -193,5 +204,7 @@ export default function TestPage() {
       </main>
     </div>
   );
+  */
+  /* eslint-enable */
 }
 

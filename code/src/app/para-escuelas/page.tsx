@@ -427,10 +427,17 @@ export default function ParaEscuelasPage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <footer className="border-t border-gray-100 mt-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
           <p className="text-center text-gray-600 text-sm">
-            © 2025 TestNauti. Conectando estudiantes con escuelas náuticas.
+            © 2026 TestNauti. Directorio de escuelas náuticas en España.{' '}
+              Desarrollado por <a
+                href="https://craftwerk.studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 transition-colors"
+              >Craftwerk Studio
+            </a>
           </p>
         </div>
       </footer>

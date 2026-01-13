@@ -228,9 +228,6 @@ export default async function SchoolDetailPage({
                   <span className="drop-shadow">{school.region}</span>
                 </div>
               </div>
-              <p className="text-xl text-white/90 drop-shadow mb-8">
-                {school.description}
-              </p>
             </div>
           </div>
         </div>
@@ -483,21 +480,40 @@ export default async function SchoolDetailPage({
                   </div>
                 </div>
 
-                {/* CTA Card */}
-                <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl p-6 text-white shadow-xl">
-                  <div className="text-4xl mb-3">🎓</div>
-                  <h3 className="text-xl font-bold mb-2">
-                    ¿Ya estás matriculado?
+                {/* CTA Card - Hidden for launch */}
+                {false && (
+                  <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl p-6 text-white shadow-xl">
+                    <div className="text-4xl mb-3">🎓</div>
+                    <h3 className="text-xl font-bold mb-2">
+                      ¿Ya estás matriculado?
+                    </h3>
+                    <p className="text-white/90 mb-6 text-sm leading-relaxed">
+                      Practica para tu examen del PER con tests reales y mejora tu
+                      puntuación
+                    </p>
+                    <Link
+                      href="/sign-up"
+                      className="block w-full bg-white text-blue-600 hover:bg-gray-50 text-center px-6 py-3 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl"
+                    >
+                      Comenzar a practicar
+                    </Link>
+                  </div>
+                )}
+
+                {/* For school owners */}
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-2 border-blue-200">
+                  <div className="text-3xl mb-2">🏫</div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    ¿Es tu escuela?
                   </h3>
-                  <p className="text-white/90 mb-6 text-sm leading-relaxed">
-                    Practica para tu examen del PER con tests reales y mejora tu
-                    puntuación
+                  <p className="text-sm text-gray-600 mb-4">
+                    Reclama tu perfil, actualiza tu información o solicita destacar tu escuela
                   </p>
                   <Link
-                    href="/sign-up"
-                    className="block w-full bg-white text-blue-600 hover:bg-gray-50 text-center px-6 py-3 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl"
+                    href={`/escuelas/${school.id}/actualizar`}
+                    className="block text-center bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:from-blue-700 hover:to-cyan-700 px-4 py-2 rounded-lg text-sm font-semibold transition-all"
                   >
-                    Comenzar a practicar
+                    Actualizar mi escuela →
                   </Link>
                 </div>
 
@@ -530,23 +546,6 @@ export default async function SchoolDetailPage({
                     className="text-sm text-blue-600 hover:text-blue-700 font-medium block"
                   >
                     → Ver todas las escuelas
-                  </Link>
-                </div>
-
-                {/* For school owners */}
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-2 border-blue-200">
-                  <div className="text-3xl mb-2">🏫</div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    ¿Es tu escuela?
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4">
-                    Reclama tu perfil, actualiza tu información o solicita destacar tu escuela
-                  </p>
-                  <Link
-                    href={`/escuelas/${school.id}/actualizar`}
-                    className="block text-center bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:from-blue-700 hover:to-cyan-700 px-4 py-2 rounded-lg text-sm font-semibold transition-all"
-                  >
-                    Actualizar mi escuela →
                   </Link>
                 </div>
               </div>
@@ -620,7 +619,14 @@ export default async function SchoolDetailPage({
         <footer className="border-t border-gray-100 mt-16 bg-gray-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
             <p className="text-center text-gray-600 text-sm">
-              © 2025 TestNauti. Directorio de escuelas náuticas en España.
+              © 2026 TestNauti. Directorio de escuelas náuticas en España.{' '}
+                Desarrollado por <a
+                  href="https://craftwerk.studio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-700 transition-colors"
+                >Craftwerk Studio
+              </a>
             </p>
           </div>
         </footer>
