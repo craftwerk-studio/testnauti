@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { NauticalSchool } from '@/data/nauticalSchools.backup';
+import { NauticalSchool } from '@/types/exam';
 
 interface EscuelasContentProps {
   schools: NauticalSchool[];
@@ -281,7 +281,7 @@ export default function EscuelasContent({ schools, regions, cities }: EscuelasCo
                   )}
                   {school.courses.length > 0 && (
                     <div className="flex flex-wrap gap-2">
-                      {school.courses.slice(0, 3).map((course) => (
+                      {school.courses.slice(0, 3).map((course: string) => (
                         <span
                           key={course}
                           className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700"

@@ -1,19 +1,4 @@
-export interface NauticalSchool {
-  id: string;
-  name: string;
-  city: string;
-  province: string;
-  region: string;
-  address: string;
-  phone?: string;
-  email?: string;
-  website?: string;
-  courses: string[];
-  description: string;
-  featured?: boolean;
-  image?: string;
-  status?: string;
-}
+import { NauticalSchool } from '@/types/exam';
 
 export const nauticalSchools: NauticalSchool[] = [
   {
