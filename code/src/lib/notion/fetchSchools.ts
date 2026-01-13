@@ -61,7 +61,7 @@ export async function fetchSchoolsFromNotion(): Promise<NauticalSchool[]> {
     // Retry logic with exponential backoff
     while (!success && retries < maxRetries) {
       try {
-        response = await notion.databases.query({
+        response = await (notion.databases as any).query({
           database_id: ESCUELAS_DB_ID,
           start_cursor: startCursor,
           // Remove filter to get all schools initially
