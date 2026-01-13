@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import type { Exam, Question, QuestionOptions, AnswerOption } from '../code/src/types/exam';
+import type { Exam, Question, QuestionOptions, AnswerOption } from '../../code/src/types/exam';
 
 // Define source data structure
 interface SourceBlock {

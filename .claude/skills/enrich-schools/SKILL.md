@@ -14,21 +14,21 @@ AI-powered tool to enrich nautical school data in Notion by scraping their websi
 
 ### Dry Run (Preview Changes)
 ```bash
-cd enrich-schools-script
+cd scripts/schools/enrich-schools
 npm run start
 ```
 Shows what would be updated without actually modifying Notion.
 
 ### Execute (Update Notion)
 ```bash
-cd enrich-schools-script
+cd scripts/schools/enrich-schools
 npm run execute
 ```
 Actually updates the Notion database with scraped data.
 
 ### Test Mode (5 Schools)
 ```bash
-cd enrich-schools-script
+cd scripts/schools/enrich-schools
 npm run test              # Dry run on 5 schools
 npm run test:execute      # Execute on 5 schools
 ```
@@ -71,7 +71,7 @@ npm run execute -- --limit 5       # Update 5 schools
 
 ### Environment Variables
 
-Create `.env` file in `enrich-schools-script/` directory:
+Create `.env` file in `scripts/schools/enrich-schools/` directory:
 
 ```env
 NOTION_TOKEN=secret_xxx...
@@ -83,13 +83,13 @@ NOTION_ESCUELAS_DB_ID=xxx...
 
 Already installed if you ran the script before:
 ```bash
-cd enrich-schools-script
+cd scripts/schools/enrich-schools
 npm install
 ```
 
 ## Output
 
-After running, you'll find two reports in `enrich-schools-script/`:
+After running, you'll find two reports in `scripts/schools/enrich-schools/`:
 
 1. **Markdown Report** (`enrich-schools-report-YYYY-MM-DD.md`)
    - Summary statistics
@@ -140,7 +140,7 @@ When you invoke `/enrich-schools`, I'll:
 ## Troubleshooting
 
 ### "NOTION_TOKEN is not defined"
-Make sure `.env` file exists in `enrich-schools-script/` with all required variables.
+Make sure `.env` file exists in `scripts/schools/enrich-schools/` with all required variables.
 
 ### "Invalid select option, commas not allowed"
 Some schools return course descriptions with commas which Notion's multi-select doesn't allow. These are logged as validation errors - you'll need to manually fix them in Notion.
@@ -187,6 +187,6 @@ Me: Running enrichment on 10 schools with actual updates...
 Total cost: $0.03
 
 Reports saved:
-- enrich-schools-script/enrich-schools-report-2026-01-12.md
-- enrich-schools-script/enrich-schools-results-2026-01-12.csv
+- scripts/schools/enrich-schools/enrich-schools-report-2026-01-12.md
+- scripts/schools/enrich-schools/enrich-schools-results-2026-01-12.csv
 ```

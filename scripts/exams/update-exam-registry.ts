@@ -6,8 +6,8 @@ import path from 'path';
  * This script scans the exams directory and generates the import statements and registry array
  */
 
-const EXAMS_DIR = path.join(__dirname, '../code/src/data/exams');
-const LOAD_EXAMS_FILE = path.join(__dirname, '../code/src/lib/loadExams.ts');
+const EXAMS_DIR = path.join(__dirname, '../../code/src/data/exams');
+const LOAD_EXAMS_FILE = path.join(__dirname, '../../code/src/lib/loadExams.ts');
 
 /**
  * Generate a valid TypeScript variable name from filename

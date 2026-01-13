@@ -69,26 +69,17 @@ All `/app/*` routes are protected by `src/middleware.ts` using Clerk's `createRo
 
 ## Adding New Exams
 
-Create a JSON file in `src/data/exams/`:
-```json
-{
-  "id": "2024-per-paper1",
-  "title": "PER Exam 2024",
-  "subject": "Navigation",
-  "year": 2024,
-  "durationMinutes": 60,
-  "totalQuestions": 40,
-  "questions": [
-    {
-      "number": 1,
-      "text": "Question text?",
-      "options": { "a": "...", "b": "...", "c": "...", "d": "..." },
-      "correctAnswer": "b"
-    }
-  ]
-}
+1. Place raw exam JSON files in `/data/exams/`
+2. Run transformation script:
+```bash
+npx tsx scripts/exams/batch-transform-exams.ts data/exams/ --year 2025
 ```
-Exams automatically appear in the catalog.
+3. Update exam registry:
+```bash
+npx tsx scripts/exams/update-exam-registry.ts
+```
+
+Exams automatically appear in the catalog. See `/docs/guides/exam-import-guide.md` for details.
 
 ## Database Schema
 
@@ -114,17 +105,38 @@ DIRECT_URL="postgresql://..."
 
 `@/*` maps to `./src/*` (configured in tsconfig.json)
 
+## Project Structure
+
+```
+TestNauti/
+├── code/              # Next.js application only
+├── scripts/           # Utility scripts (exams, schools)
+├── data/              # Source/raw data files
+├── docs/              # Project documentation
+└── .claude/           # Claude Code configuration
+```
+
 ## Documentation
 
-Core documentation files (in `code/` directory):
-- **README.md** - Complete project guide (users & developers)
-- **START_HERE.md** - Quick overview and getting started
-- **CONTEXT.md** - Project goals and philosophy
-- **ARCHITECTURE.md** - Technical architecture details
-- **DATABASE_SETUP.md** - Detailed database configuration
-- **QUICK_DATABASE_SETUP.md** - 5-minute database setup
-- **LAUNCH_READY.md** - Production launch checklist
+**Root level:**
+- **README.md** - Project overview and navigation
+- **CLAUDE.md** - This file (Claude Code instructions)
 
-Additional documentation:
-- **docs/reference/** - Reference guides (migration, local dev setup, project overview)
-- **docs/archive/** - Historical notes (brand updates, SEO implementation, old setup guides)
+**Application docs** (in `code/`):
+- **README.md** - Complete developer guide
+- **START_HERE.md** - Quick start
+- **ARCHITECTURE.md** - Technical architecture
+- **CONTEXT.md** - Project goals
+- **DATABASE_SETUP.md** - Database configuration
+- **docs/reference/** - Technical references
+- **docs/archive/** - Historical notes
+
+**Project docs** (in `/docs/`):
+- **guides/** - Import guides, tutorials
+- **research/** - Market analysis, SEO strategy
+- **reports/** - Generated reports
+
+**Scripts docs** (in `/scripts/`):
+- **README.md** - Scripts index
+- **exams/README.md** - Exam transformation
+- **schools/README.md** - School data scripts
