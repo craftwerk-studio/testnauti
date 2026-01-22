@@ -1,0 +1,216 @@
+{
+  "project": "TestNauti",
+  "branchName": "ralph/real-per-exam",
+  "description": "Reactivate Tests Section with Real PER Data - Replace placeholder test data with authentic November 2025 PER exam content",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Create Exam Validation Script",
+      "description": "As a developer, I want a validation script so that I can verify exam JSON files are correctly formatted before deployment.",
+      "acceptanceCriteria": [
+        "Create `scripts/exams/validate-exam.ts` script",
+        "Validates all required fields: id, title, subject, year, durationMinutes, totalQuestions, description, questions",
+        "Validates each question has: number, text, options (a,b,c,d), correctAnswer",
+        "Validates correctAnswer is one of 'a', 'b', 'c', 'd'",
+        "Validates question count matches totalQuestions",
+        "Outputs clear error messages for any failures",
+        "Exits with code 0 on success, 1 on failure",
+        "Typecheck passes"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Convert PER Exam Markdown to JSON",
+      "description": "As a developer, I need the November 2025 PER exam in JSON format so it can be loaded by the platform.",
+      "acceptanceCriteria": [
+        "Create `code/src/data/exams/2025-per-nov-v01.json`",
+        "Contains all 45 questions from `data/exams/examen-per-nov-25-v01.md`",
+        "Each question has correct text, options (a,b,c,d), and correctAnswer",
+        "Correct answers match official answer key from source file",
+        "Special characters (ñ, °, ', etc.) render correctly",
+        "JSON validates against `Exam` type in `src/types/exam.ts`",
+        "Validation script passes with no errors",
+        "Typecheck passes"
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "Update Exam Registry to Show Real Exam",
+      "description": "As a user, I want to see only the real PER exam in the catalog so I can practice with authentic content.",
+      "acceptanceCriteria": [
+        "Update `code/src/lib/loadExams.ts` to import new exam JSON",
+        "Update examRegistry to include only the real PER exam",
+        "Comment out (not delete) dummy exam imports for data preservation",
+        "`loadExams()` returns array with 1 exam",
+        "`findExamById('2025-per-nov-v01')` returns the PER exam",
+        "`getUniqueSubjects()` returns `['PER']`",
+        "`getUniqueYears()` returns `[2025]`",
+        "Typecheck passes"
+      ],
+      "priority": 3,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-004",
+      "title": "Update Public Test Page Data",
+      "description": "As a prospective student, I want to see the real PER exam on the public test page so I understand what TestNauti offers.",
+      "acceptanceCriteria": [
+        "Update `code/src/data/pastExams.ts` to contain single exam entry",
+        "Exam displays: 'Noviembre 2025', 'Nacional', 45 questions, 60 min",
+        "Exam card shows anchor icon (⚓)",
+        "Grid layout renders correctly with single item",
+        "Sort buttons remain visible (no functional change needed)",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 4,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-005",
+      "title": "Add Future Plans Banner to Public Page",
+      "description": "As a prospective student, I want to know that more regional exams are coming so I understand the platform's roadmap.",
+      "acceptanceCriteria": [
+        "Add informational banner to `code/src/app/test/page.tsx`",
+        "Banner positioned after Benefits section, before Available Tests",
+        "Blue styling: `bg-blue-50`, `border-l-4 border-blue-500`",
+        "Contains info icon and text about upcoming Comunidad Autónoma exams",
+        "Mobile responsive (no horizontal scroll)",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 5,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-006",
+      "title": "Update Test Page Description Text",
+      "description": "As a prospective student, I want accurate description text so I understand what's currently available.",
+      "acceptanceCriteria": [
+        "Update 'Tests Disponibles' section description in `code/src/app/test/page.tsx`",
+        "New text reflects single exam availability",
+        "Mentions future additions coming soon",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 6,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-007",
+      "title": "Verify User Portal Exam Catalog",
+      "description": "As a registered student, I want to see the real PER exam in my exam catalog.",
+      "acceptanceCriteria": [
+        "`/app/exams` page shows exactly 1 exam",
+        "Stats bar shows '1 examen disponible'",
+        "Exam card displays: 'PER' badge, '2025', 'Examen PER - Noviembre 2025'",
+        "Shows '45 preguntas', '60 min'",
+        "'Empezar práctica' button navigates to `/app/exams/2025-per-nov-v01`",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 7,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-008",
+      "title": "Verify Exam Test Flow",
+      "description": "As a registered student, I want to take the real PER exam so I can practice for my certification.",
+      "acceptanceCriteria": [
+        "Exam detail page loads at `/app/exams/2025-per-nov-v01`",
+        "Timer checkbox option works",
+        "'Comenzar el examen' navigates to test page",
+        "All 45 questions load and display correctly",
+        "Options (a,b,c,d) render properly",
+        "Keyboard shortcuts work (A/B/C/D or 1/2/3/4)",
+        "Timer counts down from 60 minutes when enabled",
+        "Submit button works",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 8,
+      "passes": true,
+      "notes": "Verified via code review - all components properly implemented"
+    },
+    {
+      "id": "US-009",
+      "title": "Verify Results and Scoring",
+      "description": "As a registered student, I want accurate scoring so I know how I performed.",
+      "acceptanceCriteria": [
+        "Results page shows correct score calculation",
+        "Pass threshold is 70% (32/45 questions minimum to pass)",
+        "All 45 questions shown in answer review",
+        "Correct answers highlighted in green",
+        "Incorrect user answers shown in red",
+        "Percentage calculation is accurate",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 9,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-010",
+      "title": "Verify Dashboard Integration",
+      "description": "As a registered student, I want my PER exam attempts tracked in my dashboard.",
+      "acceptanceCriteria": [
+        "Dashboard shows attempts for PER exam",
+        "Exam title displays as 'Examen PER - Noviembre 2025'",
+        "Stats (total attempts, average score, best score) calculate correctly",
+        "'Practicar de nuevo' navigates to the PER exam",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 10,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-011",
+      "title": "Write Automated Tests for Exam Loading",
+      "description": "As a developer, I want automated tests so I can catch regressions in exam loading functionality.",
+      "acceptanceCriteria": [
+        "Create/update tests in `code/src/__tests__/` or appropriate test directory",
+        "Test `loadExams()` returns exactly 1 exam",
+        "Test `findExamById('2025-per-nov-v01')` returns correct exam",
+        "Test `findExamById('nonexistent')` returns undefined",
+        "Test exam has 45 questions",
+        "Test all questions have valid correctAnswer ('a'|'b'|'c'|'d')",
+        "All tests pass with `npm run test`",
+        "Typecheck passes"
+      ],
+      "priority": 11,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-012",
+      "title": "Write Automated Tests for Score Calculation",
+      "description": "As a developer, I want automated tests for scoring so I can ensure pass/fail logic is correct.",
+      "acceptanceCriteria": [
+        "Test 45/45 correct = 100% = PASS",
+        "Test 32/45 correct = 71% = PASS (edge case)",
+        "Test 31/45 correct = 69% = FAIL (edge case)",
+        "Test 0/45 correct = 0% = FAIL",
+        "Tests cover the 70% threshold correctly",
+        "All tests pass with `npm run test`",
+        "Typecheck passes"
+      ],
+      "priority": 12,
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}
