@@ -8,6 +8,7 @@ Started: Thu Jan 22 12:02:02 CET 2026
 - Test flow: exam detail page → StartTestSection (timer toggle) → TestClient (quiz engine) → results page
 - Quiz results stored in sessionStorage under 'testResults' key for cross-page access
 - Server action `saveExamAttempt()` in `code/src/app/actions/examAttempts.ts` saves to database
+- Tests: Use vitest, files are `*.test.ts` co-located with source, run `npm run test:run` from `code/`
 
 ---
 
@@ -135,4 +136,43 @@ Started: Thu Jan 22 12:02:02 CET 2026
   - Stats cards use Lucide icons: BookOpen, TrendingUp, Trophy
   - formatTime, formatDate, formatScore utilities from `@/lib/formatters`
   - SCORE_THRESHOLDS.PASS (70%) and SCORE_THRESHOLDS.WARNING used for visual feedback
+---
+
+## 2026-01-22 - US-011
+- **What was implemented**: Added automated tests for exam loading functionality
+- **Files changed**: `code/src/lib/loadExams.test.ts` (modified - added 9 new tests)
+- **Tests added**:
+  - `loadExams()` returns exactly 1 exam
+  - `findExamById('2025-per-nov-v01')` returns correct exam with all fields
+  - `findExamById('nonexistent')` returns undefined
+  - PER exam has exactly 45 questions
+  - All questions have valid correctAnswer ('a', 'b', 'c', 'd')
+  - All questions have required fields (number, text, options, correctAnswer)
+  - `getUniqueSubjects()` returns ['PER']
+  - `getUniqueYears()` returns [2025]
+- **Learnings for future iterations:**
+  - Tests use vitest framework with `describe`, `it`, `expect`, `beforeEach`
+  - Test file pattern: `*.test.ts` in same directory as source file
+  - Use `clearExamCache()` in `beforeEach` to reset state between tests
+  - Custom error messages can be passed as second argument to `expect()` for debugging
+  - vitest config excludes `.test.tsx` files (React component tests need different setup)
+  - Run tests with `npm run test:run` from `code/` directory
+---
+
+## 2026-01-22 - US-012
+- **What was implemented**: Added automated tests for score calculation to verify pass/fail logic
+- **Files changed**: `code/src/lib/formatters.test.ts` (modified - added 6 new tests)
+- **Tests added**:
+  - 45/45 correct = 100% = PASS
+  - 32/45 correct = 71% = PASS (edge case - just above threshold)
+  - 31/45 correct = 69% = FAIL (edge case - just below threshold)
+  - 0/45 correct = 0% = FAIL
+  - 70% threshold is correctly applied
+  - Minimum passing score for 45 questions is 32 correct
+- **Learnings for future iterations:**
+  - Score percentage calculation: `Math.round((correctCount / totalQuestions) * 100)`
+  - Pass threshold: `percentage >= SCORE_THRESHOLDS.PASS` (70%)
+  - For 45 questions: 32/45 = 71.11% → rounds to 71% → PASS; 31/45 = 68.89% → rounds to 69% → FAIL
+  - `formatScore()` in `formatters.ts` handles pass/fail logic and returns color class
+  - Helper functions in tests should mirror the app's actual calculation logic for accurate testing
 ---

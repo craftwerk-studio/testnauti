@@ -192,8 +192,8 @@
         "Typecheck passes"
       ],
       "priority": 11,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "Added 9 new tests in code/src/lib/loadExams.test.ts covering all acceptance criteria"
     },
     {
       "id": "US-012",
@@ -209,8 +209,8 @@
         "Typecheck passes"
       ],
       "priority": 12,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "Added 6 tests in code/src/lib/formatters.test.ts covering all score calculation scenarios for PER exam"
     }
   ]
 }
