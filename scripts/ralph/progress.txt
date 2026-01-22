@@ -1,0 +1,105 @@
+# Ralph Progress Log
+Started: Thu Jan 22 12:02:02 CET 2026
+
+## Codebase Patterns
+- Run `npm run build` from `code/` directory for typecheck
+- Use `npx tsx scripts/...` from project root to run TypeScript scripts
+- Exam types are in `code/src/types/exam.ts` - import them with relative paths in scripts
+- Test flow: exam detail page → StartTestSection (timer toggle) → TestClient (quiz engine) → results page
+- Quiz results stored in sessionStorage under 'testResults' key for cross-page access
+- Server action `saveExamAttempt()` in `code/src/app/actions/examAttempts.ts` saves to database
+
+---
+
+## 2026-01-22 - US-001
+- **What was implemented**: Created `scripts/exams/validate-exam.ts` validation script
+- **Files changed**: `scripts/exams/validate-exam.ts` (new file)
+- **Learnings for future iterations:**
+  - The Exam type requires: id, title, subject, year, durationMinutes, totalQuestions, description, questions
+  - Question type requires: number, text, options (with a,b,c,d keys), correctAnswer (must be 'a'|'b'|'c'|'d')
+  - Existing exam scripts are in `scripts/exams/` and use `tsx` to run
+  - Import paths from scripts use relative paths like `../../code/src/types/exam`
+---
+
+## 2026-01-22 - US-002
+- **What was implemented**: Converted November 2025 PER exam from markdown to JSON format
+- **Files changed**: `code/src/data/exams/2025-per-nov-v01.json` (new file)
+- **Learnings for future iterations:**
+  - Exam markdown source files are in `data/exams/` with format `examen-per-nov-25-v01.md`
+  - Answer keys are at the bottom of markdown files in format "1 B" (question number space answer letter)
+  - Subject field should be "PER" (short form) not "Nautical Certification (PER)"
+  - Title format should be "Examen PER - Noviembre 2025" (Spanish, with month and year)
+  - Validation script: `npx tsx scripts/exams/validate-exam.ts <path-to-json>`
+  - Special characters like ñ, º, etc. are supported in JSON strings
+---
+
+## 2026-01-22 - US-003
+- **What was implemented**: Updated exam registry to show only the real PER exam
+- **Files changed**: `code/src/lib/loadExams.ts` (modified)
+- **Learnings for future iterations:**
+  - `loadExams.ts` is the central registry for all exams in the platform
+  - To add/remove exams: import JSON file and add/remove from `examRegistry` array
+  - Dummy exams were commented out (not deleted) for data preservation
+  - Functions `loadExams()`, `findExamById()`, `getUniqueSubjects()`, `getUniqueYears()` use caching
+  - There's a `clearExamCache()` function useful for testing
+---
+
+## 2026-01-22 - US-004
+- **What was implemented**: Updated public test page data to show only real PER exam
+- **Files changed**: `code/src/data/pastExams.ts` (modified)
+- **Learnings for future iterations:**
+  - `pastExams.ts` is used by the public `/test` page to display available exams
+  - The `PastExam` interface is defined in the same file and includes: date, dateSort, community, questions, duration, icon
+  - Previous dummy data was commented out (not deleted) for data preservation
+  - The test page at `src/app/test/page.tsx` uses CSS grid which handles any number of items gracefully
+---
+
+## 2026-01-22 - US-005
+- **What was implemented**: Added Future Plans Banner to public test page
+- **Files changed**: `code/src/app/test/page.tsx` (modified)
+- **Learnings for future iterations:**
+  - Informational banners use `bg-blue-50 border-l-4 border-blue-500` styling pattern
+  - Use Heroicons SVG paths for info icons (24x24 viewBox, strokeWidth 1.5)
+  - Banner text colors: `text-blue-800` for headings, `text-blue-700` for body text
+  - Use `flex items-start` with `flex-shrink-0` on icons for proper mobile layout
+---
+
+## 2026-01-22 - US-006
+- **What was implemented**: Updated 'Tests Disponibles' section description text
+- **Files changed**: `code/src/app/test/page.tsx` (modified)
+- **Learnings for future iterations:**
+  - Description text is on lines 128-131 in the Tests Disponibles section
+  - Keep description concise (2 sentences) to maintain page readability
+  - Text should reflect actual current state of available exams, not aspirational content
+---
+
+## 2026-01-22 - US-007
+- **What was implemented**: Verified User Portal Exam Catalog and fixed grammar in stats bar
+- **Files changed**: `code/src/app/app/exams/page.tsx` (modified - singular/plural grammar fix)
+- **Learnings for future iterations:**
+  - The exam catalog page is at `code/src/app/app/exams/page.tsx`
+  - `loadExams()` from `@/lib/loadExams` provides the list of available exams
+  - Stats bar displays `exams.length` - use ternary for proper singular/plural grammar
+  - Exam card shows: subject badge, year, title, totalQuestions, durationMinutes
+  - 'Empezar práctica' button links to `/app/exams/${exam.id}`
+  - Spanish grammar: "1 examen disponible" (singular) vs "X exámenes disponibles" (plural)
+---
+
+## 2026-01-22 - US-008
+- **What was implemented**: Verified Exam Test Flow through comprehensive code review
+- **Files reviewed**:
+  - `code/src/app/app/exams/[examId]/page.tsx` (exam detail page)
+  - `code/src/app/app/exams/[examId]/StartTestSection.tsx` (timer checkbox, start button)
+  - `code/src/app/app/exams/[examId]/test/page.tsx` (test page wrapper)
+  - `code/src/app/app/exams/[examId]/test/TestClient.tsx` (quiz engine)
+- **Learnings for future iterations:**
+  - Exam detail page uses `findExamById(examId)` from `@/lib/loadExams`
+  - `StartTestSection` is a client component that handles timer toggle and navigation
+  - Timer is passed as query param: `/app/exams/${examId}/test?timed=${timerEnabled}`
+  - `TestClient.tsx` is the main quiz engine with full keyboard navigation
+  - Keyboard shortcuts: A/B/C/D or 1/2/3/4 for answers, arrows for navigation, Enter for continue
+  - Timer initializes to `exam.durationMinutes * 60` seconds and counts down
+  - `performSubmit()` calculates score, saves to sessionStorage, calls `saveExamAttempt()` server action
+  - Uses `useRef` pattern to avoid stale closure issues in timer callback
+  - Confirmation dialog shows unanswered count with warning styling
+---
