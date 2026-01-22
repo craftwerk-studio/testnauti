@@ -103,3 +103,20 @@ Started: Thu Jan 22 12:02:02 CET 2026
   - Uses `useRef` pattern to avoid stale closure issues in timer callback
   - Confirmation dialog shows unanswered count with warning styling
 ---
+
+## 2026-01-22 - US-009
+- **What was implemented**: Verified Results and Scoring functionality through code review
+- **Files reviewed**:
+  - `code/src/app/app/exams/[examId]/results/page.tsx` (results display)
+  - `code/src/app/app/exams/[examId]/test/TestClient.tsx` (score calculation)
+- **Learnings for future iterations:**
+  - Results page uses `sessionStorage.getItem('testResults')` to retrieve exam results
+  - Score percentage calculation: `Math.round((correctCount / totalQuestions) * 100)`
+  - Pass threshold is `percentage >= 70` (line 49 in results page)
+  - For 45 questions: 32/45 = 71% (PASS), 31/45 = 69% (FAIL)
+  - Answer review iterates through `results.questions.map()` to show all questions
+  - Correct answers: `border-green-500 bg-green-50` (green highlighting)
+  - Incorrect user answers: `border-red-500 bg-red-50` (red highlighting)
+  - Unanswered shown with gray badge "Sin responder"
+  - TestClient's `performSubmit()` stores results in sessionStorage before navigation
+---
