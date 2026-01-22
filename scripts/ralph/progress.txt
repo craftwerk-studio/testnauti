@@ -1,0 +1,178 @@
+# Ralph Progress Log
+Started: Thu Jan 22 12:02:02 CET 2026
+
+## Codebase Patterns
+- Run `npm run build` from `code/` directory for typecheck
+- Use `npx tsx scripts/...` from project root to run TypeScript scripts
+- Exam types are in `code/src/types/exam.ts` - import them with relative paths in scripts
+- Test flow: exam detail page → StartTestSection (timer toggle) → TestClient (quiz engine) → results page
+- Quiz results stored in sessionStorage under 'testResults' key for cross-page access
+- Server action `saveExamAttempt()` in `code/src/app/actions/examAttempts.ts` saves to database
+- Tests: Use vitest, files are `*.test.ts` co-located with source, run `npm run test:run` from `code/`
+
+---
+
+## 2026-01-22 - US-001
+- **What was implemented**: Created `scripts/exams/validate-exam.ts` validation script
+- **Files changed**: `scripts/exams/validate-exam.ts` (new file)
+- **Learnings for future iterations:**
+  - The Exam type requires: id, title, subject, year, durationMinutes, totalQuestions, description, questions
+  - Question type requires: number, text, options (with a,b,c,d keys), correctAnswer (must be 'a'|'b'|'c'|'d')
+  - Existing exam scripts are in `scripts/exams/` and use `tsx` to run
+  - Import paths from scripts use relative paths like `../../code/src/types/exam`
+---
+
+## 2026-01-22 - US-002
+- **What was implemented**: Converted November 2025 PER exam from markdown to JSON format
+- **Files changed**: `code/src/data/exams/2025-per-nov-v01.json` (new file)
+- **Learnings for future iterations:**
+  - Exam markdown source files are in `data/exams/` with format `examen-per-nov-25-v01.md`
+  - Answer keys are at the bottom of markdown files in format "1 B" (question number space answer letter)
+  - Subject field should be "PER" (short form) not "Nautical Certification (PER)"
+  - Title format should be "Examen PER - Noviembre 2025" (Spanish, with month and year)
+  - Validation script: `npx tsx scripts/exams/validate-exam.ts <path-to-json>`
+  - Special characters like ñ, º, etc. are supported in JSON strings
+---
+
+## 2026-01-22 - US-003
+- **What was implemented**: Updated exam registry to show only the real PER exam
+- **Files changed**: `code/src/lib/loadExams.ts` (modified)
+- **Learnings for future iterations:**
+  - `loadExams.ts` is the central registry for all exams in the platform
+  - To add/remove exams: import JSON file and add/remove from `examRegistry` array
+  - Dummy exams were commented out (not deleted) for data preservation
+  - Functions `loadExams()`, `findExamById()`, `getUniqueSubjects()`, `getUniqueYears()` use caching
+  - There's a `clearExamCache()` function useful for testing
+---
+
+## 2026-01-22 - US-004
+- **What was implemented**: Updated public test page data to show only real PER exam
+- **Files changed**: `code/src/data/pastExams.ts` (modified)
+- **Learnings for future iterations:**
+  - `pastExams.ts` is used by the public `/test` page to display available exams
+  - The `PastExam` interface is defined in the same file and includes: date, dateSort, community, questions, duration, icon
+  - Previous dummy data was commented out (not deleted) for data preservation
+  - The test page at `src/app/test/page.tsx` uses CSS grid which handles any number of items gracefully
+---
+
+## 2026-01-22 - US-005
+- **What was implemented**: Added Future Plans Banner to public test page
+- **Files changed**: `code/src/app/test/page.tsx` (modified)
+- **Learnings for future iterations:**
+  - Informational banners use `bg-blue-50 border-l-4 border-blue-500` styling pattern
+  - Use Heroicons SVG paths for info icons (24x24 viewBox, strokeWidth 1.5)
+  - Banner text colors: `text-blue-800` for headings, `text-blue-700` for body text
+  - Use `flex items-start` with `flex-shrink-0` on icons for proper mobile layout
+---
+
+## 2026-01-22 - US-006
+- **What was implemented**: Updated 'Tests Disponibles' section description text
+- **Files changed**: `code/src/app/test/page.tsx` (modified)
+- **Learnings for future iterations:**
+  - Description text is on lines 128-131 in the Tests Disponibles section
+  - Keep description concise (2 sentences) to maintain page readability
+  - Text should reflect actual current state of available exams, not aspirational content
+---
+
+## 2026-01-22 - US-007
+- **What was implemented**: Verified User Portal Exam Catalog and fixed grammar in stats bar
+- **Files changed**: `code/src/app/app/exams/page.tsx` (modified - singular/plural grammar fix)
+- **Learnings for future iterations:**
+  - The exam catalog page is at `code/src/app/app/exams/page.tsx`
+  - `loadExams()` from `@/lib/loadExams` provides the list of available exams
+  - Stats bar displays `exams.length` - use ternary for proper singular/plural grammar
+  - Exam card shows: subject badge, year, title, totalQuestions, durationMinutes
+  - 'Empezar práctica' button links to `/app/exams/${exam.id}`
+  - Spanish grammar: "1 examen disponible" (singular) vs "X exámenes disponibles" (plural)
+---
+
+## 2026-01-22 - US-008
+- **What was implemented**: Verified Exam Test Flow through comprehensive code review
+- **Files reviewed**:
+  - `code/src/app/app/exams/[examId]/page.tsx` (exam detail page)
+  - `code/src/app/app/exams/[examId]/StartTestSection.tsx` (timer checkbox, start button)
+  - `code/src/app/app/exams/[examId]/test/page.tsx` (test page wrapper)
+  - `code/src/app/app/exams/[examId]/test/TestClient.tsx` (quiz engine)
+- **Learnings for future iterations:**
+  - Exam detail page uses `findExamById(examId)` from `@/lib/loadExams`
+  - `StartTestSection` is a client component that handles timer toggle and navigation
+  - Timer is passed as query param: `/app/exams/${examId}/test?timed=${timerEnabled}`
+  - `TestClient.tsx` is the main quiz engine with full keyboard navigation
+  - Keyboard shortcuts: A/B/C/D or 1/2/3/4 for answers, arrows for navigation, Enter for continue
+  - Timer initializes to `exam.durationMinutes * 60` seconds and counts down
+  - `performSubmit()` calculates score, saves to sessionStorage, calls `saveExamAttempt()` server action
+  - Uses `useRef` pattern to avoid stale closure issues in timer callback
+  - Confirmation dialog shows unanswered count with warning styling
+---
+
+## 2026-01-22 - US-009
+- **What was implemented**: Verified Results and Scoring functionality through code review
+- **Files reviewed**:
+  - `code/src/app/app/exams/[examId]/results/page.tsx` (results display)
+  - `code/src/app/app/exams/[examId]/test/TestClient.tsx` (score calculation)
+- **Learnings for future iterations:**
+  - Results page uses `sessionStorage.getItem('testResults')` to retrieve exam results
+  - Score percentage calculation: `Math.round((correctCount / totalQuestions) * 100)`
+  - Pass threshold is `percentage >= 70` (line 49 in results page)
+  - For 45 questions: 32/45 = 71% (PASS), 31/45 = 69% (FAIL)
+  - Answer review iterates through `results.questions.map()` to show all questions
+  - Correct answers: `border-green-500 bg-green-50` (green highlighting)
+  - Incorrect user answers: `border-red-500 bg-red-50` (red highlighting)
+  - Unanswered shown with gray badge "Sin responder"
+  - TestClient's `performSubmit()` stores results in sessionStorage before navigation
+---
+
+## 2026-01-22 - US-010
+- **What was implemented**: Verified Dashboard Integration through code review
+- **Files reviewed**:
+  - `code/src/app/app/dashboard/page.tsx` (dashboard display)
+  - `code/src/app/actions/examAttempts.ts` (getUserStats server action)
+- **Learnings for future iterations:**
+  - Dashboard page is at `code/src/app/app/dashboard/page.tsx`
+  - `getUserStats()` fetches all attempts and calculates: totalAttempts, averageScore, bestScore
+  - `recentAttempts.slice(0, 5)` limits display to 5 most recent attempts
+  - examTitle is stored in database when `saveExamAttempt()` is called from TestClient
+  - 'Practicar de nuevo' button uses `stats.recentAttempts[0].examId` for navigation
+  - Stats cards use Lucide icons: BookOpen, TrendingUp, Trophy
+  - formatTime, formatDate, formatScore utilities from `@/lib/formatters`
+  - SCORE_THRESHOLDS.PASS (70%) and SCORE_THRESHOLDS.WARNING used for visual feedback
+---
+
+## 2026-01-22 - US-011
+- **What was implemented**: Added automated tests for exam loading functionality
+- **Files changed**: `code/src/lib/loadExams.test.ts` (modified - added 9 new tests)
+- **Tests added**:
+  - `loadExams()` returns exactly 1 exam
+  - `findExamById('2025-per-nov-v01')` returns correct exam with all fields
+  - `findExamById('nonexistent')` returns undefined
+  - PER exam has exactly 45 questions
+  - All questions have valid correctAnswer ('a', 'b', 'c', 'd')
+  - All questions have required fields (number, text, options, correctAnswer)
+  - `getUniqueSubjects()` returns ['PER']
+  - `getUniqueYears()` returns [2025]
+- **Learnings for future iterations:**
+  - Tests use vitest framework with `describe`, `it`, `expect`, `beforeEach`
+  - Test file pattern: `*.test.ts` in same directory as source file
+  - Use `clearExamCache()` in `beforeEach` to reset state between tests
+  - Custom error messages can be passed as second argument to `expect()` for debugging
+  - vitest config excludes `.test.tsx` files (React component tests need different setup)
+  - Run tests with `npm run test:run` from `code/` directory
+---
+
+## 2026-01-22 - US-012
+- **What was implemented**: Added automated tests for score calculation to verify pass/fail logic
+- **Files changed**: `code/src/lib/formatters.test.ts` (modified - added 6 new tests)
+- **Tests added**:
+  - 45/45 correct = 100% = PASS
+  - 32/45 correct = 71% = PASS (edge case - just above threshold)
+  - 31/45 correct = 69% = FAIL (edge case - just below threshold)
+  - 0/45 correct = 0% = FAIL
+  - 70% threshold is correctly applied
+  - Minimum passing score for 45 questions is 32 correct
+- **Learnings for future iterations:**
+  - Score percentage calculation: `Math.round((correctCount / totalQuestions) * 100)`
+  - Pass threshold: `percentage >= SCORE_THRESHOLDS.PASS` (70%)
+  - For 45 questions: 32/45 = 71.11% → rounds to 71% → PASS; 31/45 = 68.89% → rounds to 69% → FAIL
+  - `formatScore()` in `formatters.ts` handles pass/fail logic and returns color class
+  - Helper functions in tests should mirror the app's actual calculation logic for accurate testing
+---

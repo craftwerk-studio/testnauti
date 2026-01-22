@@ -231,3 +231,78 @@ describe('clearExamCache', () => {
     expect(exams1).not.toBe(exams2);
   });
 });
+
+/**
+ * Tests specific to the current PER exam configuration
+ * These tests verify the real November 2025 PER exam is correctly loaded
+ */
+describe('PER Exam Loading (US-011)', () => {
+  beforeEach(() => {
+    clearExamCache();
+  });
+
+  it('loadExams() returns exactly 1 exam', () => {
+    const exams = loadExams();
+    expect(exams.length).toBe(1);
+  });
+
+  it('findExamById("2025-per-nov-v01") returns the correct exam', () => {
+    const exam = findExamById('2025-per-nov-v01');
+    expect(exam).toBeDefined();
+    expect(exam?.id).toBe('2025-per-nov-v01');
+    expect(exam?.title).toBe('Examen PER - Noviembre 2025');
+    expect(exam?.subject).toBe('PER');
+    expect(exam?.year).toBe(2025);
+  });
+
+  it('findExamById("nonexistent") returns undefined', () => {
+    const exam = findExamById('nonexistent');
+    expect(exam).toBeUndefined();
+  });
+
+  it('PER exam has exactly 45 questions', () => {
+    const exam = findExamById('2025-per-nov-v01');
+    expect(exam).toBeDefined();
+    expect(exam?.questions.length).toBe(45);
+    expect(exam?.totalQuestions).toBe(45);
+  });
+
+  it('all questions have valid correctAnswer (a, b, c, or d)', () => {
+    const exam = findExamById('2025-per-nov-v01');
+    expect(exam).toBeDefined();
+
+    const validAnswers = ['a', 'b', 'c', 'd'];
+    exam?.questions.forEach((question, index) => {
+      expect(
+        validAnswers.includes(question.correctAnswer),
+        `Question ${index + 1} has invalid correctAnswer: "${question.correctAnswer}"`
+      ).toBe(true);
+    });
+  });
+
+  it('all questions have required fields', () => {
+    const exam = findExamById('2025-per-nov-v01');
+    expect(exam).toBeDefined();
+
+    exam?.questions.forEach((question, index) => {
+      expect(question.number, `Question ${index + 1} missing number`).toBeDefined();
+      expect(question.text, `Question ${index + 1} missing text`).toBeDefined();
+      expect(question.options, `Question ${index + 1} missing options`).toBeDefined();
+      expect(question.options.a, `Question ${index + 1} missing option a`).toBeDefined();
+      expect(question.options.b, `Question ${index + 1} missing option b`).toBeDefined();
+      expect(question.options.c, `Question ${index + 1} missing option c`).toBeDefined();
+      expect(question.options.d, `Question ${index + 1} missing option d`).toBeDefined();
+      expect(question.correctAnswer, `Question ${index + 1} missing correctAnswer`).toBeDefined();
+    });
+  });
+
+  it('getUniqueSubjects() returns ["PER"]', () => {
+    const subjects = getUniqueSubjects();
+    expect(subjects).toEqual(['PER']);
+  });
+
+  it('getUniqueYears() returns [2025]', () => {
+    const years = getUniqueYears();
+    expect(years).toEqual([2025]);
+  });
+});
