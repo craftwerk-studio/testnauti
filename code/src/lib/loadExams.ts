@@ -2,20 +2,27 @@ import { Exam } from '@/types/exam';
 
 // Import all exam JSON files
 // To add a new exam: 1) Create JSON file in src/data/exams/ 2) Import and add to examRegistry below
-import exam2023Math from '@/data/exams/2023-math-paper1.json';
-import exam2024Biology from '@/data/exams/2024-biology-midterm.json';
-import exam2022Physics from '@/data/exams/2022-physics-final.json';
-import exam2025PER from '@/data/exams/2025-per-exam69.json';
+
+// Real PER exam
+import exam2025PERNov from '@/data/exams/2025-per-nov-v01.json';
+
+// Dummy exams - kept for data preservation but not active in the platform
+// import exam2023Math from '@/data/exams/2023-math-paper1.json';
+// import exam2024Biology from '@/data/exams/2024-biology-midterm.json';
+// import exam2022Physics from '@/data/exams/2022-physics-final.json';
+// import exam2025PER from '@/data/exams/2025-per-exam69.json';
 
 /**
  * Registry of all available exams
  * Add new exam imports here - they will automatically appear in the catalog
  */
 const examRegistry: Exam[] = [
-  exam2023Math as Exam,
-  exam2024Biology as Exam,
-  exam2022Physics as Exam,
-  exam2025PER as Exam,
+  exam2025PERNov as Exam,
+  // Dummy exams - commented out for data preservation
+  // exam2023Math as Exam,
+  // exam2024Biology as Exam,
+  // exam2022Physics as Exam,
+  // exam2025PER as Exam,
 ];
 
 // Cached data to avoid recalculation
