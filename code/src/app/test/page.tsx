@@ -126,8 +126,8 @@ export default function TestPage() {
               Tests Disponibles
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-              Accede a exámenes oficiales del PER de diferentes convocatorias y Comunidades Autónomas. 
-              Cada convocatoria tiene sus propias preguntas únicas.
+              Actualmente disponemos del examen oficial PER de la convocatoria de Noviembre 2025.
+              Estamos añadiendo más exámenes de anteriores convocatorias próximamente.
             </p>
 
             {/* Filtros de ordenación */}
