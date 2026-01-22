@@ -125,3 +125,87 @@ describe('constants', () => {
     expect(TIME_THRESHOLDS.CRITICAL_SECONDS).toBe(600);
   });
 });
+
+/**
+ * Score calculation tests for PER exam (45 questions)
+ * US-012: Verify pass/fail logic at 70% threshold
+ *
+ * The percentage calculation uses: Math.round((correctCount / totalQuestions) * 100)
+ * Pass threshold: percentage >= 70
+ */
+describe('PER Exam Score Calculation (US-012)', () => {
+  const TOTAL_QUESTIONS = 45;
+
+  // Helper function that mirrors the app's calculation logic
+  const calculatePercentage = (correct: number, total: number): number => {
+    return Math.round((correct / total) * 100);
+  };
+
+  const isPassing = (percentage: number): boolean => {
+    return percentage >= SCORE_THRESHOLDS.PASS;
+  };
+
+  it('45/45 correct = 100% = PASS', () => {
+    const percentage = calculatePercentage(45, TOTAL_QUESTIONS);
+    expect(percentage).toBe(100);
+
+    const result = formatScore(percentage);
+    expect(result.passed).toBe(true);
+    expect(result.value).toBe('100%');
+    expect(result.colorClass).toBe('text-green-600');
+  });
+
+  it('32/45 correct = 71% = PASS (edge case - just above threshold)', () => {
+    // 32/45 = 0.7111... → Math.round(71.11) = 71
+    const percentage = calculatePercentage(32, TOTAL_QUESTIONS);
+    expect(percentage).toBe(71);
+
+    const result = formatScore(percentage);
+    expect(result.passed).toBe(true);
+    expect(result.value).toBe('71%');
+    expect(result.colorClass).toBe('text-green-600');
+  });
+
+  it('31/45 correct = 69% = FAIL (edge case - just below threshold)', () => {
+    // 31/45 = 0.6889... → Math.round(68.89) = 69
+    const percentage = calculatePercentage(31, TOTAL_QUESTIONS);
+    expect(percentage).toBe(69);
+
+    const result = formatScore(percentage);
+    expect(result.passed).toBe(false);
+    expect(result.value).toBe('69%');
+    expect(result.colorClass).toBe('text-yellow-600'); // 69% is in warning range (50-69)
+  });
+
+  it('0/45 correct = 0% = FAIL', () => {
+    const percentage = calculatePercentage(0, TOTAL_QUESTIONS);
+    expect(percentage).toBe(0);
+
+    const result = formatScore(percentage);
+    expect(result.passed).toBe(false);
+    expect(result.value).toBe('0%');
+    expect(result.colorClass).toBe('text-red-600');
+  });
+
+  it('70% threshold is correctly applied', () => {
+    // Exactly 70% should pass
+    expect(isPassing(70)).toBe(true);
+    expect(formatScore(70).passed).toBe(true);
+
+    // 69% should fail
+    expect(isPassing(69)).toBe(false);
+    expect(formatScore(69).passed).toBe(false);
+  });
+
+  it('minimum passing score for 45 questions is 32 correct', () => {
+    // 31/45 = 68.89% → rounds to 69% → FAIL
+    const score31 = calculatePercentage(31, TOTAL_QUESTIONS);
+    expect(isPassing(score31)).toBe(false);
+
+    // 32/45 = 71.11% → rounds to 71% → PASS
+    const score32 = calculatePercentage(32, TOTAL_QUESTIONS);
+    expect(isPassing(score32)).toBe(true);
+
+    // This confirms 32 is the minimum passing score for 45 questions
+  });
+});
