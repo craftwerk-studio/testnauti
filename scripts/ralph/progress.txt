@@ -120,3 +120,19 @@ Started: Thu Jan 22 12:02:02 CET 2026
   - Unanswered shown with gray badge "Sin responder"
   - TestClient's `performSubmit()` stores results in sessionStorage before navigation
 ---
+
+## 2026-01-22 - US-010
+- **What was implemented**: Verified Dashboard Integration through code review
+- **Files reviewed**:
+  - `code/src/app/app/dashboard/page.tsx` (dashboard display)
+  - `code/src/app/actions/examAttempts.ts` (getUserStats server action)
+- **Learnings for future iterations:**
+  - Dashboard page is at `code/src/app/app/dashboard/page.tsx`
+  - `getUserStats()` fetches all attempts and calculates: totalAttempts, averageScore, bestScore
+  - `recentAttempts.slice(0, 5)` limits display to 5 most recent attempts
+  - examTitle is stored in database when `saveExamAttempt()` is called from TestClient
+  - 'Practicar de nuevo' button uses `stats.recentAttempts[0].examId` for navigation
+  - Stats cards use Lucide icons: BookOpen, TrendingUp, Trophy
+  - formatTime, formatDate, formatScore utilities from `@/lib/formatters`
+  - SCORE_THRESHOLDS.PASS (70%) and SCORE_THRESHOLDS.WARNING used for visual feedback
+---
