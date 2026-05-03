@@ -238,11 +238,14 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 - `src/app/escuelas/[schoolId]/page.tsx` → `app/[listing]/[id]/page.tsx`
 - `src/app/escuelas/[schoolId]/not-found.tsx` → matching path
 - `src/app/escuelas/[schoolId]/actualizar/page.tsx` → split into server shell + `components/ClaimUpdateForm.tsx`
+- `src/app/escuelas/[schoolId]/actualizar/ClaimUpdateForm.tsx` → `components/ClaimUpdateForm.tsx` (lift Calendly + support email + webhook URL to props/`siteConfig` — see follow-ups)
+- `src/app/HomeSearchBar.tsx` → `components/HomeSearchBar.tsx` (consumed by `app/page.tsx`; client-only search input extracted from the homepage)
 - `src/app/api/revalidate-schools/route.ts` → `app/api/revalidate/route.ts`
 - `src/lib/notion.ts` (env-driven, generalize var names: `NOTION_DB_ID` not `NOTION_ESCUELAS_DB_ID`)
 - `src/lib/notion/fetchSchools.ts` → `lib/adapters/notion.ts` (config-driven fields)
 - `src/data/nauticalSchools.ts` → `lib/directory.ts`
 - `src/components/MarketingNav.tsx` → `components/DirectoryNav.tsx`
+- `src/types/directory.ts` → `types/directory.ts` (rename `NauticalSchool` → `DirectoryEntry`, `courses` → `tags`, narrow `status` to literal union)
 - `src/app/sitemap.ts`, `src/app/robots.ts`
 - `src/app/layout.tsx`, `src/app/globals.css` (with CSS variables for theming)
 - `src/app/page.tsx` (skeleton with config-driven copy)
