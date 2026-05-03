@@ -155,7 +155,7 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 
 ### Phase 1 — TestNauti cleanup
 - [x] Audit all imports of `nauticalSchools.backup` and switch to live Notion source — found 3 import sites: `EscuelasContent.tsx` (type only), `actualizar/page.tsx` (data array), and **`src/app/page.tsx` (homepage featured-schools list — beyond original task list)**. Homepage converted from client to server component, client-side search extracted to `HomeSearchBar.tsx`.
-- [ ] Verify list/detail/filter/claim flows still work after switch (manual smoke test in browser) — *deferred: needs running dev server*
+- [x] Verify list/detail/filter/claim flows still work after switch — smoke-tested via curl: homepage 200 + 1 featured school SSR'd from live Notion; `/escuelas` 200 (374 KB, many schools); `/escuelas/<real>/actualizar` 200 with school name in SSR markup, form + Calendly present, `noindex,nofollow` meta correct; `/escuelas/<bogus>/actualizar` → 404 (`notFound()` works). Zero errors in dev log. Manual click-through in a browser still recommended before merge.
 - [x] Delete `src/data/nauticalSchools.backup.ts`
 - [x] Create `src/types/directory.ts`, move `NauticalSchool` interface there
 - [x] Update all imports of `NauticalSchool` from `@/types/exam` → `@/types/directory` (also fixed `EscuelasContent.tsx` which imported the type from the backup file)
