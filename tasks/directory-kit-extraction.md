@@ -297,7 +297,7 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 | Phase | Status | Notes |
 |---|---|---|
 | 1. TestNauti cleanup | **Awaiting merge** | [PR #3](https://github.com/craftwerk-studio/testnauti/pull/3) on `feat/directory-kit-extraction` (HEAD `e9c9a54`). All checks green, CodeRabbit triaged. Two deferred items in `tasks/follow-ups.md`. |
-| 2. DirectoryKit template | Prep in progress | Branch `feat/directory-kit-phase2-prep` (this branch). Phase 2 itself = new separate `directory-kit` repo; this branch is for any TestNauti-side prep that smooths extraction. |
+| 2. DirectoryKit template | Prep in progress | Branch `feat/directory-kit-phase2-prep`. File-by-file inventory + coupling audit landed → [`tasks/phase2-inventory.md`](./phase2-inventory.md). Phase 2 itself = new separate `directory-kit` repo. |
 | 3. health-clinics site | Not started | |
 | 4. Template iteration | Not started | |
 
@@ -310,3 +310,4 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 - **2026-05-01** — Document created. Strategy B chosen. Phase 1 cleanup tasks identified from code inspection.
 - **2026-05-03** — Phase 1 cleanup executed (commit `edb0f87`). Audit caught a third `nauticalSchools.backup` caller the original list missed: `src/app/page.tsx`. Lucide-react decision: no action (see Phase 1 notes).
 - **2026-05-03** — PR #3 opened. CodeRabbit installed + tuned config landed (`5adce61`). CodeRabbit review triaged: 3 applied (`868b778` — message length validation, search-query trim, homepage Notion-failure fallback), 2 deferred to `tasks/follow-ups.md` (`e9c9a54` — stale "Última Convocatoria" copy, `NauticalSchool.status` union narrowing), 1 rejected on PR (markdownlint MD040 nit, project doesn't enforce). Branch `feat/directory-kit-phase2-prep` cut from `e9c9a54` for next slice while PR #3 awaits merge.
+- **2026-05-03** — Phase 2 prep: file-by-file inventory + coupling audit committed as `tasks/phase2-inventory.md`. Captures every directory-side file with current line counts (post-Phase 1), 17-field Notion mapper config target, ~80 hardcoded blue/cyan tokens needing CSS-var migration, env-var rename table, three §8 omissions (`ClaimUpdateForm.tsx`, `HomeSearchBar.tsx`, `types/directory.ts`), and a Phase 2 build-ordering suggestion. Decision recorded: land `status` union narrowing inside the kit's fresh adapter rather than as a separate TestNauti PR.

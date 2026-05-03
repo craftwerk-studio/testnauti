@@ -2,7 +2,7 @@
 
 > **Audience:** a fresh Claude instance picking up this work after the previous session was cleared. Read this first, then `tasks/directory-kit-extraction.md` for the full plan.
 
-**Last updated:** 2026-05-03
+**Last updated:** 2026-05-03 (inventory pass added)
 
 ---
 
@@ -45,11 +45,15 @@ Per the plan: **build the `DirectoryKit` template as a separate GitHub repo** �
 - Introduce `config/site.ts` per-site config surface
 - Bring CSS variables for theming
 
-This branch (`feat/directory-kit-phase2-prep`) exists for any **TestNauti-side** prep that smooths Phase 2 — not the kit itself. Possible work:
-- Inventory exactly which files copy and which transform (cross-reference `directory-kit-extraction.md` §8 against current state)
-- Catalog any new-found coupling that should be config-driven
-- Land the deferred `status` union if it makes the extraction cleaner
-- Anything else that surfaces
+This branch (`feat/directory-kit-phase2-prep`) exists for any **TestNauti-side** prep that smooths Phase 2 — not the kit itself.
+
+**Done on this branch so far:**
+- **File-by-file inventory + coupling audit** → [`tasks/phase2-inventory.md`](./phase2-inventory.md). Up-to-date map of every directory-side file in TestNauti to its kit target, with current line counts (post-Phase 1), refactor-cost estimates, three §8 omissions captured (`ClaimUpdateForm.tsx`, `HomeSearchBar.tsx`, `types/directory.ts`), env-var rename table, and a Phase 2 ordering suggestion. **This is the reference doc for whoever starts Phase 2 in the new repo.**
+
+**Possible further prep before Phase 2 ships:**
+- (Decided **not** to do here) Land the deferred `status` union narrowing in TestNauti — see `phase2-inventory.md` §4.1 for rationale; doing it inside the kit's fresh adapter is cleaner than as a TestNauti PR.
+- Update `directory-kit-extraction.md` §8 to add the three Phase 1-created files. Optional — `phase2-inventory.md` already supersedes it as the up-to-date reference.
+- Anything else that surfaces while reviewing the inventory.
 
 If Phase 2 starts in earnest, the branch belongs in the new `directory-kit` repo, not here.
 
