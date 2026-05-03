@@ -154,14 +154,14 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 ## 6. Task Checklist
 
 ### Phase 1 — TestNauti cleanup
-- [ ] Audit all imports of `nauticalSchools.backup` and switch to live Notion source
-- [ ] Verify list/detail/filter/claim flows still work after switch (manual smoke test in browser)
-- [ ] Delete `src/data/nauticalSchools.backup.ts`
-- [ ] Create `src/types/directory.ts`, move `NauticalSchool` interface there
-- [ ] Update all imports of `NauticalSchool` from `@/types/exam` → `@/types/directory`
-- [ ] Refactor `actualizar/page.tsx`: server shell (metadata + school fetch) + client form child
-- [ ] Add `prod-files-secure.s3.us-west-2.amazonaws.com` to `next.config.ts` `images.remotePatterns`
-- [ ] Decide lucide-react: drop or adopt
+- [x] Audit all imports of `nauticalSchools.backup` and switch to live Notion source — found 3 import sites: `EscuelasContent.tsx` (type only), `actualizar/page.tsx` (data array), and **`src/app/page.tsx` (homepage featured-schools list — beyond original task list)**. Homepage converted from client to server component, client-side search extracted to `HomeSearchBar.tsx`.
+- [ ] Verify list/detail/filter/claim flows still work after switch (manual smoke test in browser) — *deferred: needs running dev server*
+- [x] Delete `src/data/nauticalSchools.backup.ts`
+- [x] Create `src/types/directory.ts`, move `NauticalSchool` interface there
+- [x] Update all imports of `NauticalSchool` from `@/types/exam` → `@/types/directory` (also fixed `EscuelasContent.tsx` which imported the type from the backup file)
+- [x] Refactor `actualizar/page.tsx`: server shell (metadata + school fetch) + client form child (`ClaimUpdateForm.tsx`). Server component now also generates proper SSR metadata with `noindex,nofollow` and uses `notFound()` properly.
+- [x] Add `prod-files-secure.s3.us-west-2.amazonaws.com` to `next.config.ts` `images.remotePatterns`
+- [ ] Decide lucide-react: drop or adopt — *paused for user decision; see notes below*
 - [ ] Open PR for cleanup, merge to main
 
 ### Phase 2 — Build DirectoryKit

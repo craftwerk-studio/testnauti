@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { NauticalSchool } from '@/data/nauticalSchools.backup';
+import { NauticalSchool } from '@/types/directory';
 
 interface EscuelasContentProps {
   schools: NauticalSchool[];

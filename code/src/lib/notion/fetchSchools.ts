@@ -1,5 +1,5 @@
 import { notion, ESCUELAS_DB_ID } from '@/lib/notion';
-import { NauticalSchool } from '@/types/exam';
+import { NauticalSchool } from '@/types/directory';
 
 // City to Province mapping for Spanish geography
 const cityToProvince: Record<string, string> = {

@@ -1,4 +1,4 @@
-import { NauticalSchool } from '@/types/exam';
+import { NauticalSchool } from '@/types/directory';
 import { fetchSchoolsFromNotion } from '@/lib/notion/fetchSchools';
 import fs from 'fs';
 import path from 'path';
