@@ -27,18 +27,26 @@ export default function ClaimUpdateForm({ school }: ClaimUpdateFormProps) {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!contactName.trim() || !contactEmail.trim() || !message.trim()) {
+    const trimmedName = contactName.trim();
+    const trimmedEmail = contactEmail.trim();
+    const trimmedPhone = contactPhone.trim();
+    const trimmedMessage = message.trim();
+
+    if (!trimmedName || !trimmedEmail || !trimmedMessage) {
+      setFormStatus('error');
       setErrorMessage('Por favor, completa todos los campos obligatorios.');
       return;
     }
 
-    if (message.trim().length < 10) {
+    if (trimmedMessage.length < 10) {
+      setFormStatus('error');
       setErrorMessage('El mensaje debe tener al menos 10 caracteres.');
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(contactEmail)) {
+    if (!emailRegex.test(trimmedEmail)) {
+      setFormStatus('error');
       setErrorMessage('Por favor, introduce un email válido.');
       return;
     }
@@ -59,10 +67,10 @@ export default function ClaimUpdateForm({ school }: ClaimUpdateFormProps) {
       schoolId: school.id,
       schoolName: school.name,
       requestType,
-      contactName,
-      contactEmail,
-      contactPhone,
-      message,
+      contactName: trimmedName,
+      contactEmail: trimmedEmail,
+      contactPhone: trimmedPhone,
+      message: trimmedMessage,
       submittedAt: new Date().toISOString(),
     };
 

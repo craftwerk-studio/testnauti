@@ -22,6 +22,9 @@ export default function HomeSearchBar() {
   return (
     <div className="max-w-4xl mx-auto">
       <form onSubmit={handleSearch}>
+        <label htmlFor="home-search-city" className="sr-only">
+          Buscar escuela por ciudad
+        </label>
         <div className="bg-white rounded-full shadow-2xl p-2">
           <div className="flex flex-col sm:flex-row gap-2">
             <div className="flex-1 relative">
@@ -32,6 +35,7 @@ export default function HomeSearchBar() {
                 </svg>
               </div>
               <input
+                id="home-search-city"
                 type="text"
                 value={searchCity}
                 onChange={(e) => setSearchCity(e.target.value)}
