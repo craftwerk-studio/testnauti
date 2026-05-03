@@ -32,6 +32,11 @@ export default function ClaimUpdateForm({ school }: ClaimUpdateFormProps) {
       return;
     }
 
+    if (message.trim().length < 10) {
+      setErrorMessage('El mensaje debe tener al menos 10 caracteres.');
+      return;
+    }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(contactEmail)) {
       setErrorMessage('Por favor, introduce un email válido.');

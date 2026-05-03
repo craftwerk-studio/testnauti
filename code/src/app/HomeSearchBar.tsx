@@ -11,8 +11,9 @@ export default function HomeSearchBar() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchCity.trim()) {
-      router.push(`/escuelas?search=${encodeURIComponent(searchCity)}`);
+    const trimmed = searchCity.trim();
+    if (trimmed) {
+      router.push(`/escuelas?search=${encodeURIComponent(trimmed)}`);
     } else {
       router.push('/escuelas');
     }

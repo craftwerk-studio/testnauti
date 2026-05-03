@@ -5,8 +5,13 @@ import HomeSearchBar from './HomeSearchBar';
 import { getNauticalSchools } from '@/data/nauticalSchools';
 
 export default async function Home() {
-  const schools = await getNauticalSchools();
-  const featuredSchools = schools.filter((school) => school.featured && school.status !== 'Inactive');
+  // Degrade to an empty featured list if Notion is unavailable; the page must still render.
+  const featuredSchools = await getNauticalSchools()
+    .then((schools) => schools.filter((school) => school.featured && school.status !== 'Inactive'))
+    .catch((error) => {
+      console.error('Failed to load featured schools for homepage:', error);
+      return [];
+    });
 
   return (
     <div className="min-h-screen bg-white">
