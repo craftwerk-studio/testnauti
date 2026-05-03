@@ -1,0 +1,54 @@
+# CodeRabbit configuration — TestNauti
+# Schema: https://docs.coderabbit.ai/reference/yaml-template
+
+language: "en-US"
+tone_instructions: "Be direct and concise. Skip preamble; lead with the issue."
+early_access: false
+
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: true
+
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - main
+
+  # Skip generated, vendored, or content-only files where review noise has no value.
+  path_filters:
+    - "!**/node_modules/**"
+    - "!**/.next/**"
+    - "!**/package-lock.json"
+    - "!**/*.lock"
+    - "!code/prisma/migrations/**"
+    - "!code/src/data/exams/**"
+    - "!code/src/data/pastExams.ts"
+    - "!data/exams/**"
+    - "!code/.schools-cache.json"
+    - "!**/*.svg"
+
+  path_instructions:
+    - path: "code/src/app/escuelas/**"
+      instructions: |
+        This /escuelas surface is being extracted into a reusable DirectoryKit
+        template (see tasks/directory-kit-extraction.md). Favor suggestions that
+        keep this code generic and portable — flag Notion/PER/nautical-specific
+        coupling that should be config-driven instead.
+
+    - path: "code/src/**/*.tsx"
+      instructions: |
+        UI strings are in Spanish (es-ES). Do not flag Spanish text as typos.
+        Code, identifiers, and comments are in English.
+
+    - path: "tasks/**"
+      instructions: |
+        Living planning documents. Skip markdown style nits; comment only on
+        substantive issues with the plan or strategy.
+
+chat:
+  auto_reply: true
