@@ -2,7 +2,7 @@
 
 > **Audience:** a fresh Claude instance picking up this work after the previous session was cleared. Read this first, then `tasks/directory-kit-extraction.md` for the full plan.
 
-**Last updated:** 2026-05-03 (inventory pass added)
+**Last updated:** 2026-05-03 (post second CodeRabbit review on PR #3)
 
 ---
 
@@ -11,7 +11,7 @@
 - **Repo:** TestNauti monorepo at `/Volumes/Chus Hard Drive/Chus/⛵️ TestNauti.co/`
 - **Worktree you're in:** `.worktrees/directory-kit-strategy/` (sibling to main checkout — see [`README.md`](../README.md))
 - **Branch:** `feat/directory-kit-phase2-prep`
-- **Cut from:** `feat/directory-kit-extraction` at commit `e9c9a54` (Phase 1 cleanup, currently in [PR #3](https://github.com/craftwerk-studio/testnauti/pull/3))
+- **Rebased on:** `feat/directory-kit-extraction` at commit `aec7c57` (Phase 1 cleanup + two rounds of CodeRabbit fixes, currently in [PR #3](https://github.com/craftwerk-studio/testnauti/pull/3))
 
 ## The plan in one paragraph
 
@@ -26,14 +26,16 @@ Extract the `/escuelas` directory surface from TestNauti into a reusable `Direct
   - `actualizar/page.tsx` refactored: server shell (params, metadata, fetch, `notFound()`) + `ClaimUpdateForm.tsx` client child
   - Notion S3 host added to `next.config.ts` `images.remotePatterns`
   - CodeRabbit installed + `.coderabbit.yaml` tuned for the project
-  - 3 of 6 CodeRabbit findings applied; 2 deferred to `tasks/follow-ups.md`; 1 rejected on PR
+  - **CodeRabbit round 1** (6 findings): 3 applied, 2 deferred to `tasks/follow-ups.md`, 1 rejected on PR (markdownlint nit; CodeRabbit then recorded a learning to skip MD040 in this repo)
+  - **CodeRabbit round 2** (4 findings, post-fix commit): 3 applied (ClaimUpdateForm trim normalization; regression fix on min-length error banner that didn't render because `setFormStatus('error')` was missing; `HomeSearchBar` sr-only label), 1 deferred to `tasks/follow-ups.md` (decouple `ClaimUpdateForm` from TestNauti branding — Phase 2 work)
 
 ## What's open
 
 - **[PR #3](https://github.com/craftwerk-studio/testnauti/pull/3)** — `feat/directory-kit-extraction`, all checks green, MERGEABLE. Awaits human approval + merge to `main`.
-- **`tasks/follow-ups.md`** — two items deferred from PR #3:
+- **`tasks/follow-ups.md`** — three items deferred from PR #3:
   1. Stale "🔥 Última Convocatoria / Julio 2024" homepage copy (it's May 2026)
   2. Narrow `NauticalSchool.status` to a string-literal union (drags Notion-mapper validation; will land naturally in Phase 2 when the kit interface is finalized)
+  3. Decouple `ClaimUpdateForm` from TestNauti branding (Calendly URL fallback, support email) — lift to props/`siteConfig`. Phase 2 extraction work.
 
 ## What's next (Phase 2)
 
