@@ -161,7 +161,7 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 - [x] Update all imports of `NauticalSchool` from `@/types/exam` → `@/types/directory` (also fixed `EscuelasContent.tsx` which imported the type from the backup file)
 - [x] Refactor `actualizar/page.tsx`: server shell (metadata + school fetch) + client form child (`ClaimUpdateForm.tsx`). Server component now also generates proper SSR metadata with `noindex,nofollow` and uses `notFound()` properly.
 - [x] Add `prod-files-secure.s3.us-west-2.amazonaws.com` to `next.config.ts` `images.remotePatterns`
-- [ ] Decide lucide-react: drop or adopt — *paused for user decision; see notes below*
+- [x] Decide lucide-react: drop or adopt — **decision: no action.** Original framing was wrong: lucide is heavily used in `src/app/app/*` (10 files: dashboard, exams catalog, TestClient, results, error pages). It's only unused on the escuelas/marketing side, which uses inline SVGs by convention. Migrating escuelas to lucide would be churn that gets undone in Phase 2 (DirectoryKit plan drops lucide entirely). Leaving as-is means escuelas inline-SVGs transport to the kit cleanly with no dep baggage.
 - [ ] Open PR for cleanup, merge to main
 
 ### Phase 2 — Build DirectoryKit
@@ -296,7 +296,7 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 
 | Phase | Status | Notes |
 |---|---|---|
-| 1. TestNauti cleanup | Not started | Branch: `feat/directory-kit-extraction` |
+| 1. TestNauti cleanup | Code complete (PR pending) | Branch: `feat/directory-kit-extraction` · Commit `edb0f87`. Manual smoke test in browser still pending. |
 | 2. DirectoryKit template | Not started | New repo TBD |
 | 3. health-clinics site | Not started | |
 | 4. Template iteration | Not started | |
@@ -306,3 +306,4 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 ## 12. Changelog
 
 - **2026-05-01** — Document created. Strategy B chosen. Phase 1 cleanup tasks identified from code inspection.
+- **2026-05-03** — Phase 1 cleanup executed (commit `edb0f87`). Audit caught a third `nauticalSchools.backup` caller the original list missed: `src/app/page.tsx`. Lucide-react decision: no action (see Phase 1 notes).
