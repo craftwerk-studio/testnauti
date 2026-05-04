@@ -162,7 +162,7 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 - [x] Refactor `actualizar/page.tsx`: server shell (metadata + school fetch) + client form child (`ClaimUpdateForm.tsx`). Server component now also generates proper SSR metadata with `noindex,nofollow` and uses `notFound()` properly.
 - [x] Add `prod-files-secure.s3.us-west-2.amazonaws.com` to `next.config.ts` `images.remotePatterns`
 - [x] Decide lucide-react: drop or adopt — **decision: no action.** Original framing was wrong: lucide is heavily used in `src/app/app/*` (10 files: dashboard, exams catalog, TestClient, results, error pages). It's only unused on the escuelas/marketing side, which uses inline SVGs by convention. Migrating escuelas to lucide would be churn that gets undone in Phase 2 (DirectoryKit plan drops lucide entirely). Leaving as-is means escuelas inline-SVGs transport to the kit cleanly with no dep baggage.
-- [ ] Open PR for cleanup, merge to main
+- [x] Open PR for cleanup — [PR #3](https://github.com/craftwerk-studio/testnauti/pull/3) opened, CodeRabbit triaged (3 applied / 2 deferred to `tasks/follow-ups.md` / 1 rejected on PR), all checks green, MERGEABLE. Awaiting human review + merge.
 
 ### Phase 2 — Build DirectoryKit
 - [ ] Create new repo `directory-kit` (separate Git repo, not in this monorepo)
@@ -238,11 +238,14 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 - `src/app/escuelas/[schoolId]/page.tsx` → `app/[listing]/[id]/page.tsx`
 - `src/app/escuelas/[schoolId]/not-found.tsx` → matching path
 - `src/app/escuelas/[schoolId]/actualizar/page.tsx` → split into server shell + `components/ClaimUpdateForm.tsx`
+- `src/app/escuelas/[schoolId]/actualizar/ClaimUpdateForm.tsx` → `components/ClaimUpdateForm.tsx` (lift Calendly + support email + webhook URL to props/`siteConfig` — see follow-ups)
+- `src/app/HomeSearchBar.tsx` → `components/HomeSearchBar.tsx` (consumed by `app/page.tsx`; client-only search input extracted from the homepage)
 - `src/app/api/revalidate-schools/route.ts` → `app/api/revalidate/route.ts`
 - `src/lib/notion.ts` (env-driven, generalize var names: `NOTION_DB_ID` not `NOTION_ESCUELAS_DB_ID`)
 - `src/lib/notion/fetchSchools.ts` → `lib/adapters/notion.ts` (config-driven fields)
 - `src/data/nauticalSchools.ts` → `lib/directory.ts`
 - `src/components/MarketingNav.tsx` → `components/DirectoryNav.tsx`
+- `src/types/directory.ts` → `types/directory.ts` (rename `NauticalSchool` → `DirectoryEntry`, `courses` → `tags`, narrow `status` to literal union)
 - `src/app/sitemap.ts`, `src/app/robots.ts`
 - `src/app/layout.tsx`, `src/app/globals.css` (with CSS variables for theming)
 - `src/app/page.tsx` (skeleton with config-driven copy)
@@ -296,10 +299,12 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 
 | Phase | Status | Notes |
 |---|---|---|
-| 1. TestNauti cleanup | Code complete (PR pending) | Branch: `feat/directory-kit-extraction` · Commit `edb0f87`. Manual smoke test in browser still pending. |
-| 2. DirectoryKit template | Not started | New repo TBD |
+| 1. TestNauti cleanup | **Awaiting merge** | [PR #3](https://github.com/craftwerk-studio/testnauti/pull/3) on `feat/directory-kit-extraction` (HEAD `e9c9a54`). All checks green, CodeRabbit triaged. Two deferred items in `tasks/follow-ups.md`. |
+| 2. DirectoryKit template | Prep in progress | Branch `feat/directory-kit-phase2-prep`. File-by-file inventory + coupling audit landed → [`tasks/phase2-inventory.md`](./phase2-inventory.md). Phase 2 itself = new separate `directory-kit` repo. |
 | 3. health-clinics site | Not started | |
 | 4. Template iteration | Not started | |
+
+**Session handoff for fresh Claude instance:** see [`tasks/SESSION-HANDOFF.md`](./SESSION-HANDOFF.md).
 
 ---
 
@@ -307,3 +312,5 @@ Anything painful in Phase 3 gets pulled back into the template. Document.
 
 - **2026-05-01** — Document created. Strategy B chosen. Phase 1 cleanup tasks identified from code inspection.
 - **2026-05-03** — Phase 1 cleanup executed (commit `edb0f87`). Audit caught a third `nauticalSchools.backup` caller the original list missed: `src/app/page.tsx`. Lucide-react decision: no action (see Phase 1 notes).
+- **2026-05-03** — PR #3 opened. CodeRabbit installed + tuned config landed (`5adce61`). CodeRabbit review triaged: 3 applied (`868b778` — message length validation, search-query trim, homepage Notion-failure fallback), 2 deferred to `tasks/follow-ups.md` (`e9c9a54` — stale "Última Convocatoria" copy, `NauticalSchool.status` union narrowing), 1 rejected on PR (markdownlint MD040 nit, project doesn't enforce). Branch `feat/directory-kit-phase2-prep` cut from `e9c9a54` for next slice while PR #3 awaits merge.
+- **2026-05-03** — Phase 2 prep: file-by-file inventory + coupling audit committed as `tasks/phase2-inventory.md`. Captures every directory-side file with current line counts (post-Phase 1), 17-field Notion mapper config target, ~80 hardcoded blue/cyan tokens needing CSS-var migration, env-var rename table, three §8 omissions (`ClaimUpdateForm.tsx`, `HomeSearchBar.tsx`, `types/directory.ts`), and a Phase 2 build-ordering suggestion. Decision recorded: land `status` union narrowing inside the kit's fresh adapter rather than as a separate TestNauti PR.
