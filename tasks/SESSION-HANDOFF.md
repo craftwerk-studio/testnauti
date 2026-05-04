@@ -2,14 +2,14 @@
 
 > **Audience:** a fresh Claude instance picking up this work after the previous session was cleared. Read this first, then `tasks/directory-kit-extraction.md` for the full plan.
 
-**Last updated:** 2026-05-03 (post second CodeRabbit review on PR #3)
+**Last updated:** 2026-05-04 (post CodeRabbit review on PR #5; PR #3 merged; PR #5 supersedes the misdirected PR #4)
 
 ---
 
 ## Where you are
 
-- **Repo:** TestNauti monorepo at `/Volumes/Chus Hard Drive/Chus/⛵️ TestNauti.co/`
-- **Worktree you're in:** `.worktrees/directory-kit-strategy/` (sibling to main checkout — see [`README.md`](../README.md))
+- **Repo:** TestNauti monorepo (open from your local clone root; `.worktrees/` is a sibling to the main checkout — see [`README.md`](../README.md))
+- **Worktree you're in:** `.worktrees/directory-kit-strategy/`
 - **Branch:** `feat/directory-kit-phase2-prep`
 - **Rebased on:** `feat/directory-kit-extraction` at commit `aec7c57` (Phase 1 cleanup + two rounds of CodeRabbit fixes, currently in [PR #3](https://github.com/craftwerk-studio/testnauti/pull/3))
 
@@ -67,7 +67,7 @@ These are loaded from your project memory at session start (`MEMORY.md`), but wo
 2. **Never edit `main`.** Always work on a branch. Substantial work goes in a worktree (this one is `.worktrees/directory-kit-strategy/`).
 3. **Critical evaluation of all review feedback** — the per-finding eval table is in `~/.claude/CLAUDE.md`. 100% apply rate means you weren't being critical; re-evaluate.
 4. **Spanish UI strings** — `code/src/**/*.tsx` UI copy is es-ES; code/identifiers/comments are English. The `.coderabbit.yaml` tells the reviewer this; do the same when reviewing yourself.
-5. **The Next.js project lives in `code/`.** Run `npm run dev`/`build`/`lint` from there. The `.env` and `.env.local` are gitignored — copy from the main checkout if missing in this worktree (`/Volumes/Chus Hard Drive/Chus/⛵️ TestNauti.co/code/.env*`).
+5. **The Next.js project lives in `code/`.** Run `npm run dev`/`build`/`lint` from there. The `.env` and `.env.local` are gitignored — copy from the main checkout's `code/.env*` into this worktree's `code/` if missing.
 
 ## Quick orientation commands
 
